@@ -1,0 +1,6 @@
+@Poc.MKT.API_HostAddress = http://localhost:5248
+
+GET {{Poc.MKT.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

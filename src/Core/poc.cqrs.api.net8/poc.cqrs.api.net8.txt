@@ -1,0 +1,50 @@
+
+
+poc.cqrs.api.net8
+
+
+1 - Criação das US, Task
+
+2 - Definição do projeto 
+
+3 - Criação da raiz de pastas do projeto
+
+	01 - Presentation
+		Poc.Api
+		Poc.Worker.Kafka
+		Poc.Worker.RabbitMQ
+
+	02 - Application
+		Poc.Command
+		Poc.Contract
+		Poc.Query
+
+	03 - Domain
+		Poc.Domain
+
+	04 - Infrastructure
+		Database
+			Poc.CommandStore
+			Poc.QueryStore
+
+		Integration
+
+	05 - Tests
+
+	06 - Doc
+		docker-compose
+		Poc.Core
+
+	07-Mock
+		poc.api.gateway
+		poc.api.mongodb
+		poc.api.redis
+		poc.api.sqlserver
+
+4 - Criar UML da arquitetura do projeto
+
+
+
+
+
+
