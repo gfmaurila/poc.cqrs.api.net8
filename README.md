@@ -18,59 +18,57 @@
 - Resut Pattern
 - Domain Events
 
-# Documentação - Arquitetura
-- Clean Architecture: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/Clean-Architecture
-- API: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/API
-- CQRS: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/CQRS
+# Raiz do projeto
 
-# Documentação APIs
+## Clone o projeto usando o seguinte comando: git clone https://github.com/gfmaurila/poc.cqrs.api.net8.git
+- cd poc.cqrs.api.net8 > cd src
+    - git clone https://github.com/gfmaurila/poc.cqrs.api.gateway.net8.git
+    - git clone https://github.com/gfmaurila/poc.cqrs.api.core.sqlserver.ef.net8.git
+    - git clone https://github.com/gfmaurila/poc.cqrs.api.rh.oracle.dapper.net8.git
+    - git clone https://github.com/gfmaurila/poc.cqrs.api.mkt.mysql.ef.net8.git
+    - git clone https://github.com/gfmaurila/poc.cqrs.api.mock.net8.git
+    
 
-## Poc.Gateway.API
-- Auth: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/01-%E2%80%90-Poc.Core.API-%E2%80%90-Gateway-%E2%80%90-Auth
-- Person ???
-- Notification: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/01-%E2%80%90-Poc.Core.API-%E2%80%90-Gateway-%E2%80%90-Notification
-- User: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/01-%E2%80%90-Poc.Core.API-%E2%80%90-Gateway-%E2%80%90-User
-- Region: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/02-%E2%80%90-Poc.RH.API-%E2%80%90-Gateway-%E2%80%90-Region
+# Descrição das APIs
 
-## Poc.Core.API
-- Person: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/Person
-- Notification: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/Notification
-- User: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/User
+## poc.cqrs.api.gateway.net8
+- Responsável por integrar diversas APIs, incluindo autenticação, gestão de funcionários e envio de e-mails em massa. Facilita a comunicação entre as seguintes APIs:
+- poc.cqrs.api.core.sqlserver.ef.net8: Autenticação e controle de acesso.
+- poc.cqrs.api.rh.oracle.dapper.net8: Armazenamento de dados de funcionários.
+- poc.cqrs.api.mkt.mysql.ef.net8: Gestão de campanhas de email marketing.
+- poc.cqrs.api.mock.net8: Simulação de envios de email e mensagens.
+- docker-compose up --build
+- http://localhost:5078/swagger/index.html
 
-## Third Party Services
-- SendGridEmail: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/Third-Party-Services-%E2%80%90-SendGridEmail
-- Twilio: https://github.com/gfmaurila/poc.cqrs.api.net8/wiki/Third-Party-Services-%E2%80%90-Twilio
+## poc.cqrs.api.core.sqlserver.ef.net8
+- API de autenticação para outros serviços. Gerencia tokens e controla o acesso com base nos papéis dos usuários.
+- docker-compose up --build
+- http://localhost:5075/swagger/index.html
+- SQL Server
 
-
-# Wiki
-- Link: https://github.com/gfmaurila/poc.cqrs.api.net8.wiki.git
-
-
-
-## Configuração e Instalação
-
-### Clonando o Repositório
-Clone o repositório usando: https://github.com/gfmaurila/poc.cqrs.api.net8
-
-### Configurando o Docker e Docker Compose
-docker-compose up --build
-http://localhost:5078/swagger/index.html
-
-### SQL Server - API-Core
-- Add-Migration Inicial -Context EFSqlServerContext
-- Update-Database -Context EFSqlServerContext
-
-### MySQL - API-MKT
-- Add-Migration Inicial -Context MySQLContext
-- Update-Database -Context MySQLContext
-
-### Oracle - API-Core
+## poc.cqrs.api.rh.oracle.dapper.net8
+- Gerencia informações de pessoal e departamentos. Inclui operações administrativas no banco Oracle
+- docker-compose up --build
+- http://localhost:5076/swagger/index.html
 - ALTER USER hr ACCOUNT UNLOCK;
 - ALTER USER hr IDENTIFIED BY oracle;
 
-## Youtube
-- Instalação do projeto: https://youtu.be/orCUfM44huc
+## poc.cqrs.api.mkt.mysql.ef.net8
+- API para gerenciamento de campanhas de email marketing.
+- docker-compose up --build
+- http://localhost:5077/swagger/index.html
 
+## poc.cqrs.api.mock.net8
+- Simula a funcionalidade de serviços de email e mensagens, como SendGridEmail e Twilio.
+- http://localhost:5254/swagger/index.html
+
+## NuGet Package: poc.core.net8
+- Biblioteca central que fornece classes e métodos utilizados por todos os projetos.
+- Install-Package poc.core.api.net8 --version 1.0.0
+- https://www.nuget.org/packages/poc.core.api.net8
+
+## Youtube
+- ......
 
 ## Autor
 
