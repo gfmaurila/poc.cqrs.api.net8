@@ -22,12 +22,12 @@
 
 ## Clone o projeto usando o seguinte comando: 
 - https://github.com/gfmaurila/poc.cqrs.api.net8
-- cd poc.cqrs.api.net8 > cd src
-    - git clone https://github.com/gfmaurila/poc.cqrs.api.gateway.net8.git
-    - git clone https://github.com/gfmaurila/poc.cqrs.api.core.sqlserver.ef.net8.git
-    - git clone https://github.com/gfmaurila/poc.cqrs.api.rh.oracle.dapper.net8.git
-    - git clone https://github.com/gfmaurila/poc.cqrs.api.mkt.mysql.ef.net8.git
-    - git clone https://github.com/gfmaurila/poc.cqrs.api.mock.net8.git
+    - cd poc.cqrs.api.net8 > cd src
+        - git clone https://github.com/gfmaurila/poc.cqrs.api.gateway.net8.git
+        - git clone https://github.com/gfmaurila/poc.cqrs.api.core.sqlserver.ef.net8.git
+        - git clone https://github.com/gfmaurila/poc.cqrs.api.rh.oracle.dapper.net8.git
+        - git clone https://github.com/gfmaurila/poc.cqrs.api.mkt.mysql.ef.net8.git
+        - git clone https://github.com/gfmaurila/poc.cqrs.api.mock.net8.git
     
 
 # Descrição das APIs
