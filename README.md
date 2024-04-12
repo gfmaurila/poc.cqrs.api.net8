@@ -62,7 +62,7 @@
 - Simula a funcionalidade de serviços de email e mensagens, como SendGridEmail e Twilio.
 - http://localhost:5254/swagger/index.html
 
-## NuGet Package: poc.core.net8
+## NuGet Package: https://github.com/gfmaurila/poc.api.net8
 - Biblioteca central que fornece classes e métodos utilizados por todos os projetos.
 - Install-Package poc.core.api.net8 --version 1.0.0
 - https://www.nuget.org/packages/poc.core.api.net8
