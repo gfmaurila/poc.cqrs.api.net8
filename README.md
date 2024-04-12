@@ -20,7 +20,8 @@
 
 # Raiz do projeto
 
-## Clone o projeto usando o seguinte comando: git clone https://github.com/gfmaurila/poc.cqrs.api.net8.git
+## Clone o projeto usando o seguinte comando: 
+- https://github.com/gfmaurila/poc.cqrs.api.net8
 - cd poc.cqrs.api.net8 > cd src
     - git clone https://github.com/gfmaurila/poc.cqrs.api.gateway.net8.git
     - git clone https://github.com/gfmaurila/poc.cqrs.api.core.sqlserver.ef.net8.git
