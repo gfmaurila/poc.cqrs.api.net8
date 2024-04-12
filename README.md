@@ -1,4 +1,4 @@
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/59224071-9efb-4dc9-aeaf-26e3e1defdc9)# Estrutura da API
+# Estrutura da API
 - ASP.NET Core 8.0: Framework para desenvolvimento da Microsoft.
 - AutoMapper: Biblioteca para realizar mapeamento entre objetos.
 - Swagger UI: Documentação para a API.
