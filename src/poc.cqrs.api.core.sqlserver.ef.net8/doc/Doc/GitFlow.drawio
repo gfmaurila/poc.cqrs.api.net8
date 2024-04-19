@@ -1,0 +1,182 @@
+<mxfile host="Electron" modified="2024-04-02T01:24:11.001Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="AoGHnBEt9nwdoOCIvUQc" version="24.0.4" type="device">
+  <diagram id="XA99qU3cDHYatSXJtBS5" name="GitFlow - Project">
+    <mxGraphModel dx="2074" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-1" value="Feature" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry y="840" width="360" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-2" value="project/PRJ0000001/feature/task-descricao-task" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-1" vertex="1">
+          <mxGeometry x="42" y="60" width="278" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-3" value="Sprint - 1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry y="40" width="360" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-4" value="Main" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-3" vertex="1">
+          <mxGeometry x="30" y="50" width="278" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-5" value="project/PRJ0000001/develop" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-3" vertex="1">
+          <mxGeometry x="30" y="420" width="278" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-6" value="Criar uma banch baseada na main" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;size=14;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-3" vertex="1">
+          <mxGeometry x="30" y="220" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-3" source="2WW3tdDtkjBmZJyYnpmO-4" target="2WW3tdDtkjBmZJyYnpmO-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="140" />
+              <mxPoint x="70" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.144;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#f5f5f5;strokeColor=#666666;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-3" source="2WW3tdDtkjBmZJyYnpmO-6" target="2WW3tdDtkjBmZJyYnpmO-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-9" value="Merge Release" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="850" y="40" width="360" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-10" value="Release" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-9" vertex="1">
+          <mxGeometry x="30" y="50" width="278" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-11" value="merge-release/project/PRJ0000001/feature-task-descricao-task" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-9" vertex="1">
+          <mxGeometry x="30" y="420" width="278" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-12" value="Criar uma banch baseada na Release" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;size=14;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-9" vertex="1">
+          <mxGeometry x="30" y="220" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-9" source="2WW3tdDtkjBmZJyYnpmO-10" target="2WW3tdDtkjBmZJyYnpmO-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="120" />
+              <mxPoint x="70" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.144;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-9" source="2WW3tdDtkjBmZJyYnpmO-12" target="2WW3tdDtkjBmZJyYnpmO-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-15" value="Faz PR para Release" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;size=14;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-9" vertex="1">
+          <mxGeometry x="228" y="220" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-9" source="2WW3tdDtkjBmZJyYnpmO-11" target="2WW3tdDtkjBmZJyYnpmO-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="268" y="390" />
+              <mxPoint x="268" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.856;entryY=1.067;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-9" source="2WW3tdDtkjBmZJyYnpmO-15" target="2WW3tdDtkjBmZJyYnpmO-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-18" value="Criar uma banch de tarefa&amp;nbsp; baseada na banch:&amp;nbsp;project/PRJ0000001/develop" style="shape=note;size=20;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#ffe6cc;strokeColor=#d79b00;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry y="680" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.213;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="2WW3tdDtkjBmZJyYnpmO-5" target="2WW3tdDtkjBmZJyYnpmO-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="49" y="560" />
+              <mxPoint x="49" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.043;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="2WW3tdDtkjBmZJyYnpmO-18" target="2WW3tdDtkjBmZJyYnpmO-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="54" y="800" />
+              <mxPoint x="54" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-21" value="Faz PR para project/PRJ0000001/develop" style="shape=note;size=20;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#ffe6cc;strokeColor=#d79b00;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="260" y="680" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="2WW3tdDtkjBmZJyYnpmO-2" target="2WW3tdDtkjBmZJyYnpmO-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="345" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.921;entryY=0.983;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="2WW3tdDtkjBmZJyYnpmO-21" target="2WW3tdDtkjBmZJyYnpmO-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="2WW3tdDtkjBmZJyYnpmO-25" target="2WW3tdDtkjBmZJyYnpmO-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="280" />
+              <mxPoint x="830" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-25" value="Faz merge release" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;size=14;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="520" y="270" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="2WW3tdDtkjBmZJyYnpmO-5" target="2WW3tdDtkjBmZJyYnpmO-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="169" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-27" value="Merge Develop" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="40" width="360" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-28" value="Develop" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-27" vertex="1">
+          <mxGeometry x="30" y="50" width="278" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-29" value="merge-develop/project/PRJ0000001/feature-task-descricao-task" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-27" vertex="1">
+          <mxGeometry x="30" y="420" width="278" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-30" value="Criar uma banch baseada na Develop" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;size=14;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-27" vertex="1">
+          <mxGeometry x="30" y="220" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-27" source="2WW3tdDtkjBmZJyYnpmO-28" target="2WW3tdDtkjBmZJyYnpmO-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="120" />
+              <mxPoint x="70" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.144;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-27" source="2WW3tdDtkjBmZJyYnpmO-30" target="2WW3tdDtkjBmZJyYnpmO-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-33" value="Faz PR para Develop" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;size=14;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-27" vertex="1">
+          <mxGeometry x="228" y="220" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.752;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-27" source="2WW3tdDtkjBmZJyYnpmO-29" target="2WW3tdDtkjBmZJyYnpmO-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-27" source="2WW3tdDtkjBmZJyYnpmO-29" target="2WW3tdDtkjBmZJyYnpmO-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="268" y="390" />
+              <mxPoint x="268" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.856;entryY=1.067;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="2WW3tdDtkjBmZJyYnpmO-27" source="2WW3tdDtkjBmZJyYnpmO-33" target="2WW3tdDtkjBmZJyYnpmO-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="2WW3tdDtkjBmZJyYnpmO-38" target="2WW3tdDtkjBmZJyYnpmO-29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1005" y="640" />
+              <mxPoint x="1005" y="590" />
+              <mxPoint x="1240" y="590" />
+              <mxPoint x="1240" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-38" value="Faz merge develop" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;size=14;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="560" y="630" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2WW3tdDtkjBmZJyYnpmO-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="2WW3tdDtkjBmZJyYnpmO-5" target="2WW3tdDtkjBmZJyYnpmO-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

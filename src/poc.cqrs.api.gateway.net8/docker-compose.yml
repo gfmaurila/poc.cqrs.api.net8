@@ -1,0 +1,30 @@
+version: '3.9'
+# docker-compose up --build
+networks:
+  app-network:
+    driver: bridge
+
+services:
+
+  poc.gateway.api-webapi:
+    image: ${DOCKER_REGISTRY-}poc.gateway.api-webapi
+    container_name: poc.gateway.api-webapi
+    restart: always
+    build:
+      context: .
+      dockerfile: src/Dockerfile
+    expose:
+      - 5078
+    ports:
+      - 5078:5078
+    # links:
+    #   - poc.core.api.webapi
+    #   - poc.rh.api.webapi
+    #   - poc.mkt.api.webapi
+    networks:
+      - app-network
+    # depends_on:
+    #   - poc.core.api.webapi
+    #   - poc.rh.api.webapi
+    #   - poc.mkt.api.webapi
+  
