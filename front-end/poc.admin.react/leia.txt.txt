@@ -1,0 +1,15 @@
+1. Instale as dependências
+
+cd C:\Work\poc.cqrs.api.net8\front-end\poc.admin.react
+npm install
+
+cd C:\Work\poc.cqrs.api.net8\front-end\poc.admin.react
+yarn install
+
+
+npm start
+
+
+yarn start
+
+
