@@ -32,7 +32,7 @@
 	<Company>gfmaurila</Company>
 	<Description>poc.core.api.net8</Description>
 	<PackageTags>tag1;tag2</PackageTags>
-	<RepositoryUrl>https://github.com/seurepositorio</RepositoryUrl>
+	<RepositoryUrl>https://github.com/gfmaurila/poc.core.net8</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
