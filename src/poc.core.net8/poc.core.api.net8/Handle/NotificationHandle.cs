@@ -1,22 +1,23 @@
 ﻿using poc.core.api.net8.Interface;
+using poc.core.api.net8.Model;
 
 namespace poc.core.api.net8.Handle;
 
 public class NotificationHandle : INotificationHandle
 {
-    private List<poc.core.api.net8.Model.Notification> _notification;
+    private List<Notification> _notification;
 
     public NotificationHandle()
     {
-        _notification = new List<poc.core.api.net8.Model.Notification>();
+        _notification = new List<Notification>();
     }
 
-    public void Handle(poc.core.api.net8.Model.Notification notification)
+    public void Handle(Notification notification)
     {
         _notification.Add(notification);
     }
 
-    public List<poc.core.api.net8.Model.Notification> GetNotification()
+    public List<Notification> GetNotification()
     {
         return _notification;
     }
