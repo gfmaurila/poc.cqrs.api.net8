@@ -8,13 +8,38 @@ services:
 
 # APIS BEGIN -----------------------------------------------------------------------------
 
+  # https://www.bezkoder.com/docker-compose-react-nodejs-mysql/
+  poc.admin.react.webapi:
+    container_name: poc.admin.react.webapi
+    restart: always
+    build:
+      context: ./frontend/poc.admin.react
+      dockerfile: Dockerfile
+    expose:
+      - 3000
+    ports:
+      - '80:3000'
+    volumes:
+      - .:/app
+      - /frontend/poc.admin.react/app/node_modules
+    networks:
+      - app-network 
+    depends_on:
+      - poc.core.api.webapi
+      - poc.rh.api.webapi
+      - poc.mkt.api.webapi
+    links:
+      - poc.core.api.webapi
+      - poc.rh.api.webapi
+      - poc.mkt.api.webapi
+
   poc.gateway.api-webapi:
     image: ${DOCKER_REGISTRY-}poc.gateway.api-webapi
     container_name: poc.gateway.api-webapi
     restart: always
     build:
       context: .
-      dockerfile: src/poc.cqrs.api.gateway.net8/src/Dockerfile
+      dockerfile: backend/poc.cqrs.api.gateway.net8/src/Dockerfile
     expose:
       - 5078
     ports:
@@ -36,7 +61,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: src/poc.cqrs.api.core.sqlserver.ef.net8/src/01-Presentation/Poc.Core.API/Dockerfile
+      dockerfile: backend/poc.cqrs.api.core.sqlserver.ef.net8/src/01-Presentation/Poc.Core.API/Dockerfile
     expose:
       - 5075
     ports:
@@ -60,7 +85,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: src/poc.cqrs.api.rh.oracle.dapper.net8/src/01-Presentation/Poc.RH.API/Dockerfile
+      dockerfile: backend/poc.cqrs.api.rh.oracle.dapper.net8/src/01-Presentation/Poc.RH.API/Dockerfile
     expose:
       - 5076
     ports:
@@ -86,7 +111,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: src/poc.cqrs.api.mkt.mysql.ef.net8/src/01-Presentation/Poc.MKT.API/Dockerfile
+      dockerfile: backend/poc.cqrs.api.mkt.mysql.ef.net8/src/01-Presentation/Poc.MKT.API/Dockerfile
     expose:
       - 5077
     ports:
@@ -108,7 +133,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: src/poc.cqrs.api.mock.net8/poc.api.sqlserver.net8/Dockerfile
+      dockerfile: backend/poc.cqrs.api.mock.net8/poc.api.sqlserver.net8/Dockerfile
     expose:
       - 5071
     ports:
@@ -131,7 +156,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: src/poc.cqrs.api.mock.net8/poc.api.gateway.net8/Dockerfile
+      dockerfile: backend/poc.cqrs.api.mock.net8/poc.api.gateway.net8/Dockerfile
     expose:
       - 5254
     ports:
@@ -153,7 +178,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: src/poc.cqrs.api.mock.net8/poc.api.mongodb.net8/Dockerfile
+      dockerfile: backend/poc.cqrs.api.mock.net8/poc.api.mongodb.net8/Dockerfile
     expose:
       - 5073
     ports:
@@ -171,7 +196,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: src/poc.cqrs.api.mock.net8/poc.api.redis.net8/Dockerfile
+      dockerfile: backend/poc.cqrs.api.mock.net8/poc.api.redis.net8/Dockerfile
     expose:
       - 5074
     ports:
@@ -193,7 +218,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: src/poc.cqrs.api.twilio.net8/src/01-Presentation/Poc.Twilio.API/Dockerfile
+      dockerfile: backend/poc.cqrs.api.twilio.net8/src/01-Presentation/Poc.Twilio.API/Dockerfile
     expose:
       - 5079
     ports:
