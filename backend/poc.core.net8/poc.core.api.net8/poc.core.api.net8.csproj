@@ -31,7 +31,7 @@
 	<Version>1.0.2</Version>
 	<Authors>Guilherme F Maurila</Authors>
 	<Company>gfmaurila</Company>
-	<Description>poc.core.api.net8</Description>
+	<Description>Ajuste no filtro de listagens</Description>
 	<PackageTags>tag1;tag2</PackageTags>
 	<RepositoryUrl>https://github.com/gfmaurila/poc.core.net8</RepositoryUrl>
   </PropertyGroup>

@@ -5,7 +5,7 @@ using System.Data;
 namespace poc.core.api.net8.Filter.QueryStore;
 
 
-internal static class DynamicParametersFilters
+internal static class OracleDynamicParametersFilters
 {
     /// <summary>
     /// Constrói dinamicamente uma cláusula SQL de filtro e adiciona parâmetros à consulta.
@@ -16,7 +16,6 @@ internal static class DynamicParametersFilters
     /// <param name="query">A string de consulta SQL que será construída dinamicamente.</param>
     /// <param name="filterType">O tipo de filtro (AND ou OR).</param>
     /// <param name="operadorType">O operador a ser usado no filtro (Igual, Diferente, etc.).</param>
-
     /*
      Exemplo:.
 
@@ -167,7 +166,7 @@ internal static class DynamicParametersFilters
     public static string GetPaginacao(uint paginaAtual, uint itensPorPagina)
     {
         var queryFilter = string.Empty;
-        DynamicParametersFilters.AddPaginacaoAsync(ref queryFilter, paginaAtual, itensPorPagina);
+        OracleDynamicParametersFilters.AddPaginacaoAsync(ref queryFilter, paginaAtual, itensPorPagina);
         return queryFilter;
     }
 
