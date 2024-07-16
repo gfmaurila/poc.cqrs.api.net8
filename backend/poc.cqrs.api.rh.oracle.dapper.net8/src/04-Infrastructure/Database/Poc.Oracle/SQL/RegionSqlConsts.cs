@@ -6,8 +6,8 @@ public static class RegionSqlConsts
 {
     public const string SQL_GET =
     @$"
-        SELECT REGION_ID as {nameof(RegionSqlDTO.RegionId)}, 
-               REGION_NAME as {nameof(RegionSqlDTO.RegionName)} 
+        SELECT REGION_ID            {nameof(RegionSqlDTO.RegionId)}, 
+               REGION_NAME          {nameof(RegionSqlDTO.RegionName)} 
         FROM HR.REGIONS
     ";
 
@@ -15,8 +15,8 @@ public static class RegionSqlConsts
 
     public const string SQL_GET_BY_ID =
     @$"
-        SELECT REGION_ID as {nameof(RegionSqlDTO.RegionId)}, 
-               REGION_NAME as {nameof(RegionSqlDTO.RegionName)} 
+        SELECT REGION_ID            {nameof(RegionSqlDTO.RegionId)}, 
+               REGION_NAME          {nameof(RegionSqlDTO.RegionName)} 
         FROM HR.REGIONS
         WHERE REGION_ID = :PR_REGION_ID
     ";

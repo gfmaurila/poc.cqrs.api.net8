@@ -39,7 +39,7 @@
 		<PackageReference Include="Serilog.Sinks.ColoredConsole" Version="3.0.1" />
 		<PackageReference Include="Serilog.Sinks.MongoDB" Version="5.4.1" />
 		<PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.5.0" />
-		<PackageReference Include="poc.core.api.net8" Version="1.0.0" />
+		<PackageReference Include="poc.core.api.net8" Version="1.0.4" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 	</ItemGroup>
 

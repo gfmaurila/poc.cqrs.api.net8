@@ -11,7 +11,7 @@
     <PackageReference Include="Refit" Version="7.0.0" />
     <PackageReference Include="Refit.HttpClientFactory" Version="7.0.0" />
     <PackageReference Include="Refit.Newtonsoft.Json" Version="7.0.0" />
-	  <PackageReference Include="poc.core.api.net8" Version="1.0.0" />
+	  <PackageReference Include="poc.core.api.net8" Version="1.0.4" />
   </ItemGroup>
 
 </Project>

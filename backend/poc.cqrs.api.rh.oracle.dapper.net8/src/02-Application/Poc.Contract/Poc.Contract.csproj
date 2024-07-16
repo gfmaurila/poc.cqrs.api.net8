@@ -26,7 +26,7 @@
 		<PackageReference Include="FluentValidation" Version="11.5.1" />
 		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
 		<PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
-		<PackageReference Include="poc.core.api.net8" Version="1.0.0" />
+		<PackageReference Include="poc.core.api.net8" Version="1.0.4" />
 	</ItemGroup>
 
 	<ItemGroup>

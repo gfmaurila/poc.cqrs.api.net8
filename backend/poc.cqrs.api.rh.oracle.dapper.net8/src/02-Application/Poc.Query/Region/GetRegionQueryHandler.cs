@@ -1,6 +1,7 @@
 ﻿using Ardalis.Result;
 using MediatR;
 using poc.core.api.net8.Interface;
+using poc.core.api.net8.Filter.QueryStore;
 using Poc.Contract.Query.Region.Interfaces;
 using Poc.Contract.Query.Region.Request;
 using Poc.Contract.Query.Region.ViewModels;
@@ -20,6 +21,9 @@ public class GetRegionQueryHandler : IRequestHandler<GetRegionQuery, Result<List
     public async Task<Result<List<RegionQueryModel>>> Handle(GetRegionQuery request, CancellationToken cancellationToken)
     {
         const string cacheKey = nameof(GetRegionQuery);
+
+        //OracleDynamicParametersFilters.AddPaginacaoAsync(ref query, request.Pagina, request.ItensPorPagina);
+
         return Result.Success(await _cacheService.GetOrCreateAsync(cacheKey, _repo.Get, TimeSpan.FromHours(2)));
     }
 }
