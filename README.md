@@ -98,7 +98,17 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
     git clone https://github.com/gfmaurila/poc.cqrs.api.net8.git
     ```
 
-2. Rodando a aplicação inteira:
+2. Frontend - React:
+    ```bash
+    cd C:\Work\poc.cqrs.api.net8\front-end\poc.admin.react
+    npm install
+    yarn install
+    npm start
+    yarn start
+    Acesso: http://localhost/ - Falta iniciar o projeto
+    ```
+
+3. Rodando a aplicação inteira:
     ```bash
     cd C:\Work\poc.cqrs.api.net8 
     docker-compose up --build
@@ -108,7 +118,7 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
 
     ``` 
 
-3. Rodando apenas poc.cqrs.api.core.sqlserver.ef.net8:
+4. Rodando apenas poc.cqrs.api.core.sqlserver.ef.net8:
     ```bash
     cd C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.core.sqlserver.ef.net8 
     Renomeie o arquivo C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.core.sqlserver.ef.net8\src\01-Presentation\Poc.RH.API\Dockerfile-bkp para Dockerfile
@@ -117,7 +127,7 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
     SQL Server
     ```
 
-4. Rodando apenas poc.cqrs.api.rh.oracle.dapper.net8:
+5. Rodando apenas poc.cqrs.api.rh.oracle.dapper.net8:
     ```bash
     cd C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.rh.oracle.dapper.net8
     Renomeie o arquivo C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.rh.oracle.dapper.net8\src\01-Presentation\Poc.RH.API\Dockerfile-bkp para Dockerfile
@@ -129,7 +139,7 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
          ALTER USER hr IDENTIFIED BY oracle
     ```
 
-5. Rodando apenas poc.cqrs.api.mkt.mysql.ef.net8:
+6. Rodando apenas poc.cqrs.api.mkt.mysql.ef.net8:
     ```bash
     cd C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.mkt.mysql.ef.net8
     Renomeie o arquivo C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.mkt.mysql.ef.net8\src\01-Presentation\Poc.RH.API\Dockerfile-bkp para Dockerfile
@@ -137,18 +147,6 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
     http://localhost:5077/swagger/index.html
     MySQL
     ``` 
-
-## Instale as dependências
-
-1. Clone:
-    ```bash
-    cd C:\Work\poc.cqrs.api.net8\front-end\poc.admin.react
-    npm install
-    yarn install
-    npm start
-    yarn start
-    Acesso: http://localhost/ - Falta iniciar o projeto
-    ```
 
 ## Observação:
 
