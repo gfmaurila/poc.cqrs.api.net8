@@ -43,14 +43,14 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 
 ## Descrição das APIs
 
-## poc.cqrs.api.gateway.net8
+### poc.cqrs.api.gateway.net8
 - Responsável por integrar diversas APIs, incluindo autenticação, gestão de funcionários e envio de e-mails em massa. Facilita a comunicação entre as seguintes APIs:
 - poc.cqrs.api.core.sqlserver.ef.net8: Autenticação e controle de acesso.
 - poc.cqrs.api.rh.oracle.dapper.net8: Armazenamento de dados de funcionários.
 - poc.cqrs.api.mkt.mysql.ef.net8: Gestão de campanhas de email marketing.
 - poc.cqrs.api.mock.net8: Simulação de envios de email e mensagens.
 
-## poc.cqrs.api.core.sqlserver.ef.net8
+### poc.cqrs.api.core.sqlserver.ef.net8
 - API de autenticação para outros serviços. Gerencia tokens e controla o acesso com base nos papéis dos usuários.
 
 ## poc.cqrs.api.rh.oracle.dapper.net8
