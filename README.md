@@ -162,10 +162,9 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 
 ## Indice Backend
 
-- [API de Cadastros poc.cqrs.api.core.sqlserver.ef.net8](#API-de-Cadastros-poc.cqrs.api.core.sqlserver.ef.net8)
-- [API de Cadastros poc.cqrs.api.core.sqlserver.ef.net81](#API-de-Cadastros-poc.cqrs.api.core.sqlserver.ef.net81)
+- [API de Cadastros](#API-de-Cadastros)
 
-## API de Cadastros poc.cqrs.api.core.sqlserver.ef.net8
+## API de Cadastros
 
 ### 1 - Comportamento Esperado - /api/v1/User
 - Comportamento Esperado
@@ -191,31 +190,6 @@ curl --location --request POST 'https://localhost:44375/api/v1/User' \
 }'
 ```
 
-## API de Cadastros poc.cqrs.api.core.sqlserver.ef.net81
-
-### 1 - Comportamento Esperado - /api/v1/User
-- Comportamento Esperado
-
-### 1.2- Create - Post
-```
-curl --location --request POST 'https://localhost:44375/api/v1/User' \
---header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImdmbWF1cmlsYTEwQGdtYWlsLmNvbSIsImlkIjoiYzdhMTE1MGYtYmNmMC00M2EzLTkxNzctODcwNmViNGVkMDQzIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVVNFUiIsImV4cCI6MTcxMTcxNTIxOCwiaXNzIjoiSnd0QXBpQXV0aCIsImF1ZCI6Ikp3dEFwaUF1dGgifQ.XYOFdEcMxlCzXHat7FEa-6intyItzjFswe_z87eaAwU' \
---header 'Content-Type: application/json' \
---data-raw '{
-  "firstName": "Guilherme",
-  "lastName": "Figueiras Maurila",
-  "gender": 1,
-  "notification": 1,
-  "dateOfBirth": "1986-03-18",
-  "email": "gfmaurila16@gmail.com",
-  "phone": "519985623365",
-  "password": "@****",
-  "confirmpassword": "@*****",
-  "roleUserAuth": [
-    "USER"
-  ]
-}'
-```
 
 
 
