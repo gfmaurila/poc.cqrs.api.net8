@@ -9,7 +9,13 @@ public static class RegionSqlConsts
         SELECT REGION_ID            {nameof(RegionSqlDTO.RegionId)}, 
                REGION_NAME          {nameof(RegionSqlDTO.RegionName)} 
         FROM HR.REGIONS
+        WHERE 1 = 1
     ";
+
+    public const string SQL_COUNT = @"
+        SELECT COUNT(*)
+        FROM HR.REGIONS
+        WHERE 1 = 1";
 
     public const string SQL_MAX = @$"SELECT MAX(REGION_ID+1) FROM HR.REGIONS";
 

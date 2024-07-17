@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Dapper;
+using poc.core.api.net8.Filter.QueryStore;
+using poc.core.api.net8.Filter.QueryStore.Response;
 using Poc.Contract.Query.Region.Interfaces;
 using Poc.Contract.Query.Region.ViewModels;
 using Poc.Domain.Entities.Region;
@@ -41,5 +43,33 @@ public class RegionsReadOnlyRepository : IRegionsReadOnlyRepository
         var result = await dbConnection.QueryAsync<RegionEntity>(RegionSqlConsts.SQL_GET);
         var mapper = _mapper.Map<List<RegionQueryModel>>(result);
         return mapper.AsList();
+    }
+
+    public async Task<PaginationResponse<RegionQueryModel>> Get(uint page, uint itemsPerPage, string name)
+    {
+        using IDbConnection dbConnection = _dbContext.CreateConnection();
+        dbConnection.Open();
+
+        var filters = new Dictionary<string, object>();
+        var param = new DynamicParameters();
+        var query = RegionSqlConsts.SQL_GET;
+        var countQuery = RegionSqlConsts.SQL_COUNT;
+
+        // Construir a consulta dinamicamente com filtros
+        OracleDynamicParametersFilters.QueryBuilderAsync(param, "RegionName", name, ref query);
+        OracleDynamicParametersFilters.QueryBuilderAsync(param, "RegionName", name, ref countQuery);
+
+        // Obter o número total de itens
+        var totalItems = await dbConnection.ExecuteScalarAsync<uint>(countQuery, param);
+
+        // Adicionar paginação à consulta
+        var (adjustedPage, adjustedItemsPerPage) = OracleDynamicParametersFilters.AddPaginacaoAsync(ref query, page, itemsPerPage);
+
+        // Obter os itens paginados
+        var result = (await dbConnection.QueryAsync<RegionEntity>(query, param)).ToList();
+
+        var mapper = _mapper.Map<List<RegionQueryModel>>(result);
+
+        return new PaginationResponse<RegionQueryModel>(adjustedPage, adjustedItemsPerPage, totalItems, mapper, filters);
     }
 }
