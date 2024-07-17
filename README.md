@@ -141,6 +141,27 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 4. Poc.MKT.API.drawio
 5. Projeto de Sistema de RH.pdf
 
+[[_TOC_]]
+
+#Histórico de Alterações
+
+
+<table style="word-break: break-all; white-space:pre-line; font-size:10pt;">
+ <TR style="background:#1F4E79;color:White;">
+  <TD>Data</TD>
+  <TD>Desenvolvedor</TD>
+  <TD>Descrição da alteração</TD>
+  <TD>US-Não definida</TD>
+ </TR>
+ <TR style="background:white; color:black">
+  <TD> 15/01/2024 </TD>
+  <TD> Guilherme Figueiras Maurila </TD>
+  <TD> Criação da documentação </TD>
+  <TD> #0000 </TD> 
+ </TR> 
+</table>
+
+
 
 ## Youtube
 - ......
