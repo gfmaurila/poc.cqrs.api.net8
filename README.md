@@ -29,7 +29,7 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 
 ## Projeto
 
-- [Estrutura da API](#visão-geral)
+- [Estrutura da API](#Estrutura-da-API)
 - [Arquitetura](#tecnologias-utilizadas)
 - [Descrição das APIs](#uso)
 - [Instalação](#instalação)
@@ -37,7 +37,7 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 
 
 
-# Estrutura da API
+## Estrutura da API
 - ASP.NET Core 8.0: Framework para desenvolvimento da Microsoft.
 - AutoMapper: Biblioteca para realizar mapeamento entre objetos.
 - Swagger UI: Documentação para a API.
