@@ -163,6 +163,7 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 ## Índice Backend
 
 - [API de Cadastros](#API-de-Cadastros)
+- [API RH](#API-RH)
 
 ## API de Cadastros
 
@@ -389,6 +390,37 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
     "name": "string"
     }'
     ```
+
+
+
+
+
+## API RH
+
+### 1 - Comportamento Esperado - /api/v1/Region
+- Comportamento Esperado
+
+1. Inserção em Oracle: Este ponto indica que os dados devem ser persistidos em um banco de dados Oracle, garantindo que as operações de inserção sejam feitas corretamente na base de dados específica.
+
+2. Métodos Get e GetById:
+    - Consulta e Cache: Quando os métodos Get (para buscar todos os dados) e GetById (para buscar dados por um identificador específico) são chamados, a primeira tentativa é verificar se os dados já estão em cache.
+    - Evento de Domínio: Se os dados não estiverem em cache, um evento de domínio é acionado para buscar os dados da base de dados.
+    - Armazenamento em Cache: Após a recuperação, os dados são armazenados em cache para otimizar futuras consultas. Este cache é configurado para manter os dados armazenados por duas horas, após as quais, se necessário, os dados serão buscados novamente e rearmazenados em cache.
+
+
+
+### 1.1 - GET
+    ```
+    curl -X 'GET' \
+    'https://localhost:44375/api/v1/User' \
+    -H 'accept: application/json' \
+    -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImdmbWF1cmlsYUBnbWFpbC5jb20iLCJpZCI6IjhhOGNhY2JlLTI2NDUtNDA5MC1hYzgwLTQwNTAyMTRkNGRlOSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6WyJVU0VSIiwiQ1JFQVRFX1VTRVIiLCJVUERBVEVfVVNFUiIsIkRFTEVURV9VU0VSIiwiR0VUX1VTRVIiLCJHRVRfQllfSURfVVNFUiIsIk5PVElGSUNBVElPTiIsIkNSRUFURV9OT1RJRklDQVRJT04iLCJERUxFVEVfTk9USUZJQ0FUSU9OIiwiR0VUX05PVElGSUNBVElPTiIsIlJFR0lPTiIsIkNPVU5UUkkiLCJERVBBUlRNRU5UIiwiRU1QTE9ZRUUiLCJKT0IiLCJKT0JfSElTVE9SWSIsIkxPQ0FUSU9OIiwiTUtUX1BPU1QiXSwiZXhwIjoxNzIxMjgwMjA3LCJpc3MiOiJKd3RBcGlBdXRoIiwiYXVkIjoiSnd0QXBpQXV0aCJ9.XQX5mkAxlMo8R29MOvuSiPEmRY29ANHz-OdwlL9-R1M'
+    ```
+
+
+
+
+
 
 
 
