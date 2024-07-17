@@ -33,13 +33,7 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - [Arquitetura](#Arquitetura)
 - [Descrição das APIs](#Descrição-das-APIs)
 - [Instalação](#Instalação)
-- [poc.cqrs.api.gateway.net8](#poc.cqrs.api.gateway.net8)
-- [poc.cqrs.api.core.sqlserver.ef.net8](#poc.cqrs.api.core.sqlserver.ef.net8)
-- [poc.cqrs.api.rh.oracle.dapper.net8](#poc.cqrs.api.rh.oracle.dapper.net8)
-- [poc.cqrs.api.mkt.mysql.ef.net8](#poc.cqrs.api.mkt.mysql.ef.net8)
-- [poc.cqrs.api.mock.net8](#poc.cqrs.api.mock.net8)
-- [NuGet Package](#NuGet-Package)
-
+- [Observação](#Observação)
 
 
 ## Estrutura da API
@@ -70,37 +64,21 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - poc.cqrs.api.rh.oracle.dapper.net8: Armazenamento de dados de funcionários.
 - poc.cqrs.api.mkt.mysql.ef.net8: Gestão de campanhas de email marketing.
 - poc.cqrs.api.mock.net8: Simulação de envios de email e mensagens.
-- docker-compose up --build
-- http://localhost:5078/swagger/index.html
-
 
 ## poc.cqrs.api.core.sqlserver.ef.net8
 - API de autenticação para outros serviços. Gerencia tokens e controla o acesso com base nos papéis dos usuários.
-- docker-compose up --build
-- http://localhost:5075/swagger/index.html
-- SQL Server
-
 
 ## poc.cqrs.api.rh.oracle.dapper.net8
 - Gerencia informações de pessoal e departamentos. Inclui operações administrativas no banco Oracle
-- docker-compose up --build
-- http://localhost:5076/swagger/index.html
-- ALTER USER hr ACCOUNT UNLOCK;
-- ALTER USER hr IDENTIFIED BY oracle;
 
 ## poc.cqrs.api.mkt.mysql.ef.net8
 - API para gerenciamento de campanhas de email marketing.
-- docker-compose up --build
-- http://localhost:5077/swagger/index.html
 
 ## poc.cqrs.api.mock.net8
 - Simula a funcionalidade de serviços de email e mensagens, como SendGridEmail e Twilio.
-- http://localhost:5254/swagger/index.html
 
 ## NuGet Package:
 - Biblioteca central que fornece classes e métodos utilizados por todos os projetos.
-- Install-Package poc.core.api.net8
-- https://www.nuget.org/packages/poc.core.api.net8
 
 
 ## Instalação:
@@ -122,7 +100,8 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
 
 3. Rodando apenas poc.cqrs.api.core.sqlserver.ef.net8:
     ```bash
-    cd C:\Work\poc.cqrs.api.net8 
+    cd C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.core.sqlserver.ef.net8 
+    Renomeie o arquivo C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.core.sqlserver.ef.net8\src\01-Presentation\Poc.RH.API\Dockerfile-bkp para Dockerfile
     docker-compose up --build
     http://localhost:5075/swagger/index.html
     SQL Server
@@ -130,7 +109,8 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
 
 4. Rodando apenas poc.cqrs.api.rh.oracle.dapper.net8:
     ```bash
-    cd C:\Work\poc.cqrs.api.net8 
+    cd C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.rh.oracle.dapper.net8
+    Renomeie o arquivo C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.rh.oracle.dapper.net8\src\01-Presentation\Poc.RH.API\Dockerfile-bkp para Dockerfile
     docker-compose up --build
     http://localhost:5076/swagger/index.html
     Oracle
@@ -141,11 +121,14 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
 
 5. Rodando apenas poc.cqrs.api.mkt.mysql.ef.net8:
     ```bash
-    cd C:\Work\poc.cqrs.api.net8 
+    cd C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.mkt.mysql.ef.net8
+    Renomeie o arquivo C:\Work\poc.cqrs.api.net8\backend\poc.cqrs.api.mkt.mysql.ef.net8\src\01-Presentation\Poc.RH.API\Dockerfile-bkp para Dockerfile
     docker-compose up --build
     http://localhost:5077/swagger/index.html
     MySQL
     ``` 
+
+## Observação:
 
 ## Youtube
 - ......
