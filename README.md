@@ -53,16 +53,16 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 ### poc.cqrs.api.core.sqlserver.ef.net8
 - API de autenticação para outros serviços. Gerencia tokens e controla o acesso com base nos papéis dos usuários.
 
-## poc.cqrs.api.rh.oracle.dapper.net8
+### poc.cqrs.api.rh.oracle.dapper.net8
 - Gerencia informações de pessoal e departamentos. Inclui operações administrativas no banco Oracle
 
-## poc.cqrs.api.mkt.mysql.ef.net8
+### poc.cqrs.api.mkt.mysql.ef.net8
 - API para gerenciamento de campanhas de email marketing.
 
-## poc.cqrs.api.mock.net8
+### poc.cqrs.api.mock.net8
 - Simula a funcionalidade de serviços de email e mensagens, como SendGridEmail e Twilio.
 
-## NuGet Package:
+### NuGet Package:
 - Biblioteca central que fornece classes e métodos utilizados por todos os projetos.
 
 
