@@ -5,20 +5,20 @@ Este projeto foi desenvolvido com o objetivo de simular um ambiente de desenvolv
 # Componentes do Projeto
 
 # 1. NuGet Package: poc.core.net8
-- O pacote poc.core.net8 foi criado para ser reutilizado por todas as APIs do projeto, fornecendo uma base comum e facilitando a integração entre os diferentes serviços.
+O pacote poc.core.net8 foi criado para ser reutilizado por todas as APIs do projeto, fornecendo uma base comum e facilitando a integração entre os diferentes serviços.
 
 # 2. API: poc.cqrs.api.core.sqlserver.ef.net8
-- Esta API centraliza o cadastro de usuários de diversos setores, utilizando o Entity Framework e o SQL Server como banco de dados. Ela é essencial para gerenciar informações de usuários de maneira eficiente e segura.
+Esta API centraliza o cadastro de usuários de diversos setores, utilizando o Entity Framework e o SQL Server como banco de dados. Ela é essencial para gerenciar informações de usuários de maneira eficiente e segura.
 
 # 3. API: poc.cqrs.api.rh.oracle.dapper.net8
-- Responsável pelo cadastro de funcionários do sistema, esta API utiliza o Dapper e o Oracle como banco de dados. Ela é projetada para lidar com grandes volumes de dados de funcionários, garantindo rapidez e eficiência nas operações.
+Responsável pelo cadastro de funcionários do sistema, esta API utiliza o Dapper e o Oracle como banco de dados. Ela é projetada para lidar com grandes volumes de dados de funcionários, garantindo rapidez e eficiência nas operações.
 
 # 4. API: poc.cqrs.api.mkt.mysql.ef.net8
-- Focada no envio de emails de propaganda, esta API utiliza o Entity Framework e o MySQL como banco de dados. Ela é crucial para as operações de marketing, permitindo o envio automatizado de campanhas publicitárias.
+Focada no envio de emails de propaganda, esta API utiliza o Entity Framework e o MySQL como banco de dados. Ela é crucial para as operações de marketing, permitindo o envio automatizado de campanhas publicitárias.
 
 # 5. API: poc.cqrs.api.mock.net8
 
-- Estas são APIs mínimas criadas para simular o consumo de APIs e a postagem de envio de emails usando mensagerias como Kafka e RabbitMQ. Elas são fundamentais para testar e garantir a robustez do sistema em ambientes de produção.
+Estas são APIs mínimas criadas para simular o consumo de APIs e a postagem de envio de emails usando mensagerias como Kafka e RabbitMQ. Elas são fundamentais para testar e garantir a robustez do sistema em ambientes de produção.
 
 # Objetivo do Projeto
 
@@ -27,7 +27,7 @@ O principal objetivo deste projeto é proporcionar um ambiente de simulação qu
 Este projeto é uma excelente oportunidade para se familiarizar com diversas tecnologias, arquiteturas e práticas de integração de sistemas, preparando os profissionais para os desafios reais do mercado de desenvolvimento de software.
 
 
-## Índice
+## Projeto
 
 - [Estrutura da API](#visão-geral)
 - [Arquitetura](#tecnologias-utilizadas)
