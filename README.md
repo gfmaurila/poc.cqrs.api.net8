@@ -27,7 +27,7 @@ O principal objetivo deste projeto é proporcionar um ambiente de simulação qu
 Este projeto é uma excelente oportunidade para se familiarizar com diversas tecnologias, arquiteturas e práticas de integração de sistemas, preparando os profissionais para os desafios reais do mercado de desenvolvimento de software.
 
 
-## Projeto - Backend
+## Projeto - Backend - Frontend
 
 - [Estrutura da API](#Estrutura-da-API)
 - [Arquitetura](#Arquitetura)
@@ -35,11 +35,6 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - [Instalação](#Instalação)
 - [Observação](#Observação)
 - [Documentação](#Documentação)
-
-## Projeto - Frontend
-
-- [Instale as dependências](#Instale-as-dependências)
-
 
 ## Estrutura da API
 - ASP.NET Core 8.0: Framework para desenvolvimento da Microsoft.
