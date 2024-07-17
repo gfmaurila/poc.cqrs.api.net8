@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Poc.Contract.Command.StatusCallbackURL.Request.DTO;
+﻿namespace Poc.Contract.Command.StatusCallbackURL.Request.DTO;
 
 public class CreateStatusCallbackURLCancelDTO
 {
@@ -17,7 +11,7 @@ public class CreateStatusCallbackURLCancelDTO
     public string SmsStatus { get; set; } = String.Empty;
     public string Body { get; set; } = String.Empty;
     public string ButtonText { get; set; } = String.Empty;
-    public string To { get; set; } = String.Empty;              
+    public string To { get; set; } = String.Empty;
     public string ButtonPayload { get; set; } = String.Empty;
     public string NumSegments { get; set; } = String.Empty;
     public string ReferralNumMedia { get; set; } = String.Empty;

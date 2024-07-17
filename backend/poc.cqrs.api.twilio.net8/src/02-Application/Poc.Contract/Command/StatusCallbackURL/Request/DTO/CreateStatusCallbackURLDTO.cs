@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Poc.Contract.Command.StatusCallbackURL.Request.DTO;
+﻿namespace Poc.Contract.Command.StatusCallbackURL.Request.DTO;
 public class CreateStatusCallbackURLDTO
 {
     public string ChannelPrefix { get; set; } = String.Empty;
