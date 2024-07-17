@@ -22,10 +22,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infrastructure", "04 - Infrastructure", "{02F7030E-EAF7-46E7-9BE7-ADDD5F8143D6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Tests", "05 - Tests", "{AC78CEFB-96D8-4A65-916F-9996F6A7EC71}"
-	ProjectSection(SolutionItems) = preProject
-		backend\poc.cqrs.api.core.sqlserver.ef.net8\Tests\Poc.Register.IntegrationTests.txt = backend\poc.cqrs.api.core.sqlserver.ef.net8\Tests\Poc.Register.IntegrationTests.txt
-		backend\poc.cqrs.api.core.sqlserver.ef.net8\Tests\Poc.Register.UnitTestsTests.txt = backend\poc.cqrs.api.core.sqlserver.ef.net8\Tests\Poc.Register.UnitTestsTests.txt
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{7B0E0BF7-FBA8-4C66-A1B6-DC64389DC97C}"
 EndProject
@@ -111,7 +107,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infrastructure", "04 -
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Tests", "05 - Tests", "{831934FB-2F85-43E3-BD8E-43252F94DE1C}"
 	ProjectSection(SolutionItems) = preProject
-		backend\poc.cqrs.api.rh.oracle.dapper.net8\Tests\Poc.HR.IntegrationTests.txt = backend\poc.cqrs.api.rh.oracle.dapper.net8\Tests\Poc.HR.IntegrationTests.txt
 		backend\poc.cqrs.api.rh.oracle.dapper.net8\Tests\Poc.HR.UnitTestsTests.txt = backend\poc.cqrs.api.rh.oracle.dapper.net8\Tests\Poc.HR.UnitTestsTests.txt
 	EndProjectSection
 EndProject
@@ -152,10 +147,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Infrastructure", "04-Infrastructure", "{D969A34B-701E-4558-9249-01E33D6AE13F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Tests", "05 - Tests", "{D0AE7F0B-2417-4739-A3D2-0CEEDCFD782F}"
-	ProjectSection(SolutionItems) = preProject
-		backend\poc.cqrs.api.mkt.mysql.ef.net8\Tests\Poc.Mkt.IntegrationTests.txt = backend\poc.cqrs.api.mkt.mysql.ef.net8\Tests\Poc.Mkt.IntegrationTests.txt
-		backend\poc.cqrs.api.mkt.mysql.ef.net8\Tests\Poc.Mkt.UnitTestsTests.txt = backend\poc.cqrs.api.mkt.mysql.ef.net8\Tests\Poc.Mkt.UnitTestsTests.txt
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{EE37647D-48E2-4276-8471-07159C3D2E1F}"
 EndProject
@@ -182,6 +173,18 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poc.Kafka", "backend\poc.cqrs.api.mkt.mysql.ef.net8\src\04-Infrastructure\Integration\Poc.Kafka\Poc.Kafka.csproj", "{E282678D-B8BE-4264-A31C-059D1F4524A6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poc.RabbiMQ", "backend\poc.cqrs.api.mkt.mysql.ef.net8\src\04-Infrastructure\Integration\Poc.RabbiMQ\Poc.RabbiMQ.csproj", "{7DAC855C-C760-4E17-9346-FB327E71316B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.Register.IntegrationTests", "backend\poc.cqrs.api.core.sqlserver.ef.net8\Tests\Poc.Register.IntegrationTests\Poc.Register.IntegrationTests.csproj", "{146418B7-CDC0-4C52-9DE0-81A39E0235AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.Register.UnitTestsTests", "backend\poc.cqrs.api.core.sqlserver.ef.net8\Tests\Poc.Register.UnitTestsTests\Poc.Register.UnitTestsTests.csproj", "{AEAF0B6C-FC7A-4232-B82E-76D5308C2F84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.HR.IntegrationTests", "backend\poc.cqrs.api.rh.oracle.dapper.net8\Tests\Poc.HR.IntegrationTests\Poc.HR.IntegrationTests.csproj", "{7E288896-658E-42B5-B1C6-037C8B407B95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.HR.UnitTestsTests", "backend\poc.cqrs.api.rh.oracle.dapper.net8\Tests\Poc.HR.UnitTestsTests\Poc.HR.UnitTestsTests.csproj", "{155B1070-BD3A-496C-904F-8BF2472B2EFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.Mkt.IntegrationTests", "backend\poc.cqrs.api.mkt.mysql.ef.net8\Tests\Poc.Mkt.IntegrationTests\Poc.Mkt.IntegrationTests.csproj", "{BA653F3C-50B2-4469-9A46-080A49C7ED54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.Mkt.UnitTestsTests", "backend\poc.cqrs.api.mkt.mysql.ef.net8\Tests\Poc.Mkt.UnitTestsTests\Poc.Mkt.UnitTestsTests.csproj", "{04186BB3-0A31-4F84-A61E-75E26E36DDB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -369,6 +372,30 @@ Global
 		{7DAC855C-C760-4E17-9346-FB327E71316B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DAC855C-C760-4E17-9346-FB327E71316B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DAC855C-C760-4E17-9346-FB327E71316B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{146418B7-CDC0-4C52-9DE0-81A39E0235AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146418B7-CDC0-4C52-9DE0-81A39E0235AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146418B7-CDC0-4C52-9DE0-81A39E0235AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146418B7-CDC0-4C52-9DE0-81A39E0235AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEAF0B6C-FC7A-4232-B82E-76D5308C2F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEAF0B6C-FC7A-4232-B82E-76D5308C2F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEAF0B6C-FC7A-4232-B82E-76D5308C2F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEAF0B6C-FC7A-4232-B82E-76D5308C2F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E288896-658E-42B5-B1C6-037C8B407B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E288896-658E-42B5-B1C6-037C8B407B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E288896-658E-42B5-B1C6-037C8B407B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E288896-658E-42B5-B1C6-037C8B407B95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155B1070-BD3A-496C-904F-8BF2472B2EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155B1070-BD3A-496C-904F-8BF2472B2EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155B1070-BD3A-496C-904F-8BF2472B2EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155B1070-BD3A-496C-904F-8BF2472B2EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA653F3C-50B2-4469-9A46-080A49C7ED54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA653F3C-50B2-4469-9A46-080A49C7ED54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA653F3C-50B2-4469-9A46-080A49C7ED54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA653F3C-50B2-4469-9A46-080A49C7ED54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04186BB3-0A31-4F84-A61E-75E26E36DDB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04186BB3-0A31-4F84-A61E-75E26E36DDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04186BB3-0A31-4F84-A61E-75E26E36DDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04186BB3-0A31-4F84-A61E-75E26E36DDB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -453,6 +480,12 @@ Global
 		{A8CD013B-4A95-45F6-83E3-A568B8EE9929} = {F05E47F2-E937-45CF-9DC0-064226ACA526}
 		{E282678D-B8BE-4264-A31C-059D1F4524A6} = {F05E47F2-E937-45CF-9DC0-064226ACA526}
 		{7DAC855C-C760-4E17-9346-FB327E71316B} = {F05E47F2-E937-45CF-9DC0-064226ACA526}
+		{146418B7-CDC0-4C52-9DE0-81A39E0235AB} = {AC78CEFB-96D8-4A65-916F-9996F6A7EC71}
+		{AEAF0B6C-FC7A-4232-B82E-76D5308C2F84} = {AC78CEFB-96D8-4A65-916F-9996F6A7EC71}
+		{7E288896-658E-42B5-B1C6-037C8B407B95} = {831934FB-2F85-43E3-BD8E-43252F94DE1C}
+		{155B1070-BD3A-496C-904F-8BF2472B2EFE} = {831934FB-2F85-43E3-BD8E-43252F94DE1C}
+		{BA653F3C-50B2-4469-9A46-080A49C7ED54} = {D0AE7F0B-2417-4739-A3D2-0CEEDCFD782F}
+		{04186BB3-0A31-4F84-A61E-75E26E36DDB2} = {D0AE7F0B-2417-4739-A3D2-0CEEDCFD782F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC56B6C8-9186-4389-9FDC-0340B40BC5C8}
