@@ -129,6 +129,7 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
     ``` 
 
 ## Observação:
+    Para rodar todas as APIs juntas com SQL Server, Oracle, MySQL, Kafka, RabbitMQ, Redis, e MongoDB, você precisa de no mínimo 40GB de memória.
 
 ## Youtube
 - ......
