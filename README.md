@@ -290,11 +290,11 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 
 - Este endpoint é usado para iniciar o processo de reset de senha de um usuário. Ao enviar uma solicitação de reset de senha, uma série de ações são desencadeadas para enviar um email com um link de redefinição de senha.
 
-    1. Envio da Solicitação: O usuário envia uma solicitação de reset de senha fornecendo o email associado à sua conta.
-    2. Publicação em Tópico RabbitMQ: Um evento é publicado em um tópico RabbitMQ para processar a solicitação de reset de senha.
-    3. Simulação do Envio de Email: Um mock é utilizado para simular o envio de um email via API externa (Twilio). Este mock armazena as informações no banco de dados.
-    4. Armazenamento em Cache Redis: O banco de dados em cache Redis é utilizado para simular o recebimento do email, onde é gerado um link com um token de duração de duas horas.
-    5. Ação do Usuário: O usuário deve clicar no link recebido no email para redefinir sua senha. O link contém um token válido por duas horas.
+    - Envio da Solicitação: O usuário envia uma solicitação de reset de senha fornecendo o email associado à sua conta.
+    - Publicação em Tópico RabbitMQ: Um evento é publicado em um tópico RabbitMQ para processar a solicitação de reset de senha.
+    - Simulação do Envio de Email: Um mock é utilizado para simular o envio de um email via API externa (Twilio). Este mock armazena as informações no banco de dados.
+    - Armazenamento em Cache Redis: O banco de dados em cache Redis é utilizado para simular o recebimento do email, onde é gerado um link com um token de duração de duas horas.
+    - Ação do Usuário: O usuário deve clicar no link recebido no email para redefinir sua senha. O link contém um token válido por duas horas.
 
 
     ```
@@ -312,8 +312,8 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 
 - Este endpoint é utilizado para redefinir a senha de um usuário. Após o usuário receber um email de redefinição de senha com um link contendo um token, ele pode usar este endpoint para criar uma nova senha
 
-    1. Recebimento do Email de Redefinição: O usuário recebe um email com um link de redefinição de senha contendo um token válido por duas horas.
-    2. Envio da Solicitação de Redefinição: O usuário acessa o link, insere a nova senha e envia a solicitação junto com o token.
+    - Recebimento do Email de Redefinição: O usuário recebe um email com um link de redefinição de senha contendo um token válido por duas horas.
+    - Envio da Solicitação de Redefinição: O usuário acessa o link, insere a nova senha e envia a solicitação junto com o token.
 
     ```
     curl -X 'POST' \
