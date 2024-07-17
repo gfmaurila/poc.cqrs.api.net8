@@ -30,10 +30,10 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 ## Projeto
 
 - [Estrutura da API](#Estrutura-da-API)
-- [Arquitetura](#tecnologias-utilizadas)
-- [Descrição das APIs](#uso)
-- [Instalação](#instalação)
-- [poc.cqrs.api.gateway.net8](#requisitos)
+- [Arquitetura](#Arquitetura)
+- [Descrição das APIs](#Descrição das APIs)
+- [Instalação](#Instalação)
+- [poc.cqrs.api.gateway.net8](#poc.cqrs.api.gateway.net8)
 
 
 
@@ -50,14 +50,14 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - Kafka
 - Docker & Docker Compose
 
-# Arquitetura
+## Arquitetura
 - CQRS
 - Event Sourcing
 - Repository Pattern
 - Resut Pattern
 - Domain Events
 
-# Descrição das APIs
+## Descrição das APIs
 
 ## poc.cqrs.api.gateway.net8
 - Responsável por integrar diversas APIs, incluindo autenticação, gestão de funcionários e envio de e-mails em massa. Facilita a comunicação entre as seguintes APIs:
