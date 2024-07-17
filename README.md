@@ -288,13 +288,13 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 
 ### 2.2 - POST
 
-- Este endpoint é usado para iniciar o processo de reset de senha de um usuário. Ao enviar uma solicitação de reset de senha, uma série de ações são desencadeadas para enviar um email com um link de redefinição de senha.
+- Este endpoint é usado para iniciar o processo de reset de senha de um usuário. Ao enviar uma solicitação de reset de senha, uma série de ações são desencadeadas para enviar um whatsapp com um link de redefinição de senha.
 
     - Envio da Solicitação: O usuário envia uma solicitação de reset de senha fornecendo o email associado à sua conta.
     - Publicação em Tópico RabbitMQ: Um evento é publicado em um tópico RabbitMQ para processar a solicitação de reset de senha.
-    - Simulação do Envio de Email: Um mock é utilizado para simular o envio de um email via API externa (Twilio). Este mock armazena as informações no banco de dados.
-    - Armazenamento em Cache Redis: O banco de dados em cache Redis é utilizado para simular o recebimento do email, onde é gerado um link com um token de duração de duas horas.
-    - Ação do Usuário: O usuário deve clicar no link recebido no email para redefinir sua senha. O link contém um token válido por duas horas.
+    - Simulação do Envio de whatsapp: Um mock é utilizado para simular o envio de um whatsapp via API externa (Twilio). Este mock armazena as informações no banco de dados.
+    - Armazenamento em Cache Redis: O banco de dados em cache Redis é utilizado para simular o recebimento do whatsapp, onde é gerado um link com um token de duração de duas horas.
+    - Ação do Usuário: O usuário deve clicar no link recebido no whatsapp para redefinir sua senha. O link contém um token válido por duas horas.
 
 
     ```
@@ -310,9 +310,9 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 
 ### 2.3 - POST
 
-- Este endpoint é utilizado para redefinir a senha de um usuário. Após o usuário receber um email de redefinição de senha com um link contendo um token, ele pode usar este endpoint para criar uma nova senha
+- Este endpoint é utilizado para redefinir a senha de um usuário. Após o usuário receber um whatsapp de redefinição de senha com um link contendo um token, ele pode usar este endpoint para criar uma nova senha
 
-    - Recebimento do Email de Redefinição: O usuário recebe um email com um link de redefinição de senha contendo um token válido por duas horas.
+    - Recebimento do Email de Redefinição: O usuário recebe um whatsapp com um link de redefinição de senha contendo um token válido por duas horas.
     - Envio da Solicitação de Redefinição: O usuário acessa o link, insere a nova senha e envia a solicitação junto com o token.
 
     ```
@@ -325,6 +325,65 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
     "password": "string",
     "confirmPassword": "string",
     "token": "string"
+    }'
+    ```
+
+### 3 - Comportamento Esperado - /api/v1/Notification
+- Comportamento Esperado
+
+### 3.1 - POST - SMS
+
+- Este endpoint é utilizado para testar o envio de mensagens via WhatsApp e SMS utilizando o serviço Twilio. Ele serve para verificar se a integração com o Twilio está funcionando corretamente e se as mensagens estão sendo enviadas conforme esperado.
+
+    ```
+    curl -X 'POST' \
+    'https://localhost:44375/api/v1/Notification/WhatsApp' \
+    -H 'accept: application/json' \
+    -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImdmbWF1cmlsYUBnbWFpbC5jb20iLCJpZCI6IjhhOGNhY2JlLTI2NDUtNDA5MC1hYzgwLTQwNTAyMTRkNGRlOSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6WyJVU0VSIiwiQ1JFQVRFX1VTRVIiLCJVUERBVEVfVVNFUiIsIkRFTEVURV9VU0VSIiwiR0VUX1VTRVIiLCJHRVRfQllfSURfVVNFUiIsIk5PVElGSUNBVElPTiIsIkNSRUFURV9OT1RJRklDQVRJT04iLCJERUxFVEVfTk9USUZJQ0FUSU9OIiwiR0VUX05PVElGSUNBVElPTiIsIlJFR0lPTiIsIkNPVU5UUkkiLCJERVBBUlRNRU5UIiwiRU1QTE9ZRUUiLCJKT0IiLCJKT0JfSElTVE9SWSIsIkxPQ0FUSU9OIiwiTUtUX1BPU1QiXSwiZXhwIjoxNzIxMjgwMjA3LCJpc3MiOiJKd3RBcGlBdXRoIiwiYXVkIjoiSnd0QXBpQXV0aCJ9.XQX5mkAxlMo8R29MOvuSiPEmRY29ANHz-OdwlL9-R1M' \
+    -H 'Content-Type: application/json' \
+    -d '{
+    "notificationType": 0,
+    "id": 0,
+    "from": "string",
+    "body": "string",
+    "to": "string"
+    }'
+    ```
+
+### 3.2 - POST - WhatsApp
+
+    ```
+    curl -X 'POST' \
+    'https://localhost:44375/api/v1/Notification/WhatsApp' \
+    -H 'accept: application/json' \
+    -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImdmbWF1cmlsYUBnbWFpbC5jb20iLCJpZCI6IjhhOGNhY2JlLTI2NDUtNDA5MC1hYzgwLTQwNTAyMTRkNGRlOSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6WyJVU0VSIiwiQ1JFQVRFX1VTRVIiLCJVUERBVEVfVVNFUiIsIkRFTEVURV9VU0VSIiwiR0VUX1VTRVIiLCJHRVRfQllfSURfVVNFUiIsIk5PVElGSUNBVElPTiIsIkNSRUFURV9OT1RJRklDQVRJT04iLCJERUxFVEVfTk9USUZJQ0FUSU9OIiwiR0VUX05PVElGSUNBVElPTiIsIlJFR0lPTiIsIkNPVU5UUkkiLCJERVBBUlRNRU5UIiwiRU1QTE9ZRUUiLCJKT0IiLCJKT0JfSElTVE9SWSIsIkxPQ0FUSU9OIiwiTUtUX1BPU1QiXSwiZXhwIjoxNzIxMjgwMjA3LCJpc3MiOiJKd3RBcGlBdXRoIiwiYXVkIjoiSnd0QXBpQXV0aCJ9.XQX5mkAxlMo8R29MOvuSiPEmRY29ANHz-OdwlL9-R1M' \
+    -H 'Content-Type: application/json' \
+    -d '{
+    "notificationType": 2,
+    "id": 0,
+    "from": "string",
+    "body": "string",
+    "to": "string"
+    }'
+    ```
+
+### 3.3 - POST - E-mail
+
+- API também suporta o envio de emails através do SendGrid.
+
+    ```
+    curl -X 'POST' \
+    'https://localhost:44375/api/v1/Notification/Email' \
+    -H 'accept: application/json' \
+    -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImdmbWF1cmlsYUBnbWFpbC5jb20iLCJpZCI6IjhhOGNhY2JlLTI2NDUtNDA5MC1hYzgwLTQwNTAyMTRkNGRlOSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6WyJVU0VSIiwiQ1JFQVRFX1VTRVIiLCJVUERBVEVfVVNFUiIsIkRFTEVURV9VU0VSIiwiR0VUX1VTRVIiLCJHRVRfQllfSURfVVNFUiIsIk5PVElGSUNBVElPTiIsIkNSRUFURV9OT1RJRklDQVRJT04iLCJERUxFVEVfTk9USUZJQ0FUSU9OIiwiR0VUX05PVElGSUNBVElPTiIsIlJFR0lPTiIsIkNPVU5UUkkiLCJERVBBUlRNRU5UIiwiRU1QTE9ZRUUiLCJKT0IiLCJKT0JfSElTVE9SWSIsIkxPQ0FUSU9OIiwiTUtUX1BPU1QiXSwiZXhwIjoxNzIxMjgwMjA3LCJpc3MiOiJKd3RBcGlBdXRoIiwiYXVkIjoiSnd0QXBpQXV0aCJ9.XQX5mkAxlMo8R29MOvuSiPEmRY29ANHz-OdwlL9-R1M' \
+    -H 'Content-Type: application/json' \
+    -d '{
+    "notificationType": 0,
+    "from": "string",
+    "subject": "string",
+    "htmlContent": "string",
+    "to": "string",
+    "name": "string"
     }'
     ```
 
