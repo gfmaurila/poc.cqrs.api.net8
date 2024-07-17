@@ -162,14 +162,14 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 
 ## Indice Backend
 
-- [1. Criação de usuários poc.cqrs.api.core.sqlserver.ef.net8](#1.-Criação-de-usuários-poc.cqrs.api.core.sqlserver.ef.net8)
+- [API de Cadastros poc.cqrs.api.core.sqlserver.ef.net8](#API-de-Cadastros-poc.cqrs.api.core.sqlserver.ef.net8)
 
-## 1. Criação de usuários poc.cqrs.api.core.sqlserver.ef.net8
+## API de Cadastros poc.cqrs.api.core.sqlserver.ef.net8
 
-### 1.1 - Comportamento Esperado - /api/v1/User
+### 1 - Comportamento Esperado - /api/v1/User
 - Comportamento Esperado
 
-### 1.2 - Create - Post
+### 1.1 - Create - Post
 ```
 curl --location --request POST 'https://localhost:44375/api/v1/User' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImdmbWF1cmlsYTEwQGdtYWlsLmNvbSIsImlkIjoiYzdhMTE1MGYtYmNmMC00M2EzLTkxNzctODcwNmViNGVkMDQzIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVVNFUiIsImV4cCI6MTcxMTcxNTIxOCwiaXNzIjoiSnd0QXBpQXV0aCIsImF1ZCI6Ikp3dEFwaUF1dGgifQ.XYOFdEcMxlCzXHat7FEa-6intyItzjFswe_z87eaAwU' \
