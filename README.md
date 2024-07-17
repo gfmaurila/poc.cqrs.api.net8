@@ -164,6 +164,8 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 
 - [API de Cadastros](#API-de-Cadastros)
 - [API RH](#API-RH)
+- [API E-mail Marketing](#API-E-mail-Marketing)
+
 
 ## API de Cadastros
 
