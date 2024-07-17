@@ -17,7 +17,7 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - [Instalação](#Instalação)
 - [Observação](#Observação)
 - [Documentação](#Documentação)
-- [Histórico de Alterações](#Histórico de Alterações)
+- [Histórico de Alterações](#Histórico-de-Alterações)
 
 ## Estrutura da API
 - ASP.NET Core 8.0: Framework para desenvolvimento da Microsoft.
