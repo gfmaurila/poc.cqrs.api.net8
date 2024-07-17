@@ -217,6 +217,9 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
     ```
 
 ### 1.5 - PUT - Update Password
+
+- Este endpoint é usado exclusivamente para alterar a senha de um usuário existente.
+
     ```
     curl -X 'PUT' \
     'https://localhost:44375/api/v1/User/updatepassword' \
@@ -231,6 +234,9 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
     ```
 
 ### 1.6 - PUT - Update Email
+
+- Este endpoint é usado exclusivamente para alterar o endereço de email de um usuário existente.
+
     ```
     curl -X 'PUT' \
     'https://localhost:44375/api/v1/User/updateemail' \
@@ -244,6 +250,9 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
     ```
 
 ### 1.7 - PUT - Update Role
+
+- Este endpoint é usado exclusivamente para alterar as permissões de um usuário existente.
+
     ```
     curl -X 'PUT' \
     'https://localhost:44375/api/v1/User/updaterole' \
@@ -258,6 +267,24 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
     }'
     ```
 
+### 2 - Comportamento Esperado - /api/v1/Auth
+- Comportamento Esperado
+
+### 2.1 - POST
+
+- Este endpoint autentica um usuário. É utilizado para verificar as credenciais de um usuário e retornar um token de autenticação caso as credenciais estejam corretas. Esse token é usado para acessar endpoints protegidos na aplicação.
+
+    ```
+    curl -X 'POST' \
+    'https://localhost:44375/api/v1/Auth/login' \
+    -H 'accept: application/json' \
+    -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImdmbWF1cmlsYUBnbWFpbC5jb20iLCJpZCI6IjhhOGNhY2JlLTI2NDUtNDA5MC1hYzgwLTQwNTAyMTRkNGRlOSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6WyJVU0VSIiwiQ1JFQVRFX1VTRVIiLCJVUERBVEVfVVNFUiIsIkRFTEVURV9VU0VSIiwiR0VUX1VTRVIiLCJHRVRfQllfSURfVVNFUiIsIk5PVElGSUNBVElPTiIsIkNSRUFURV9OT1RJRklDQVRJT04iLCJERUxFVEVfTk9USUZJQ0FUSU9OIiwiR0VUX05PVElGSUNBVElPTiIsIlJFR0lPTiIsIkNPVU5UUkkiLCJERVBBUlRNRU5UIiwiRU1QTE9ZRUUiLCJKT0IiLCJKT0JfSElTVE9SWSIsIkxPQ0FUSU9OIiwiTUtUX1BPU1QiXSwiZXhwIjoxNzIxMjgwMjA3LCJpc3MiOiJKd3RBcGlBdXRoIiwiYXVkIjoiSnd0QXBpQXV0aCJ9.XQX5mkAxlMo8R29MOvuSiPEmRY29ANHz-OdwlL9-R1M' \
+    -H 'Content-Type: application/json' \
+    -d '{
+    "email": "user@example.com",
+    "password": "string"
+    }'
+    ```
 
 
 
