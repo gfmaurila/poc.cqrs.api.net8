@@ -34,6 +34,7 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - [Descrição das APIs](#Descrição-das-APIs)
 - [Instalação](#Instalação)
 - [Observação](#Observação)
+- [Documentação](#Documentação)
 
 
 ## Estrutura da API
@@ -129,7 +130,21 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
     ``` 
 
 ## Observação:
-    Para rodar todas as APIs juntas com SQL Server, Oracle, MySQL, Kafka, RabbitMQ, Redis, e MongoDB, você precisa de no mínimo 40GB de memória.
+
+Para rodar todas as APIs juntas com SQL Server, Oracle, MySQL, Kafka, RabbitMQ, Redis, e MongoDB, você precisa de no mínimo 40GB de memória.
+
+## Documentação:
+
+Segue a pasta da documentação do projeto:
+
+CD C:\Work\poc.cqrs.api.net8\doc\Doc
+
+1. arquitetura.drawio
+2. GitFlow.drawio
+3. Poc.Core.API.drawio
+4. Poc.MKT.API.drawio
+5. Projeto de Sistema de RH.pdf
+
 
 ## Youtube
 - ......
