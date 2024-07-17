@@ -107,9 +107,44 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 
 Este guia fornecerá as instruções necessárias para a instalação e configuração do projeto de simulação de desenvolvimento de sistemas. Este projeto inclui múltiplas APIs, diferentes bancos de dados, mensagerias e componentes reutilizáveis, projetados para treinar profissionais na manutenção de grandes projetos de software. Siga as etapas abaixo para configurar o ambiente de desenvolvimento e começar a utilizar o projeto.
 
-1. Clone o repositório:
+1. Clone:
     ```bash
     git clone https://github.com/gfmaurila/poc.cqrs.api.net8.git
+    ```
+
+2. Rodando a aplicação inteira:
+    ```bash
+    cd C:\Work\poc.cqrs.api.net8 
+    docker-compose up --build
+    http://localhost:5078/swagger/index.html
+
+    ``` 
+
+3. Rodando apenas poc.cqrs.api.core.sqlserver.ef.net8:
+    ```bash
+    cd C:\Work\poc.cqrs.api.net8 
+    docker-compose up --build
+    http://localhost:5075/swagger/index.html
+    SQL Server
+    ```
+
+4. Rodando apenas poc.cqrs.api.rh.oracle.dapper.net8:
+    ```bash
+    cd C:\Work\poc.cqrs.api.net8 
+    docker-compose up --build
+    http://localhost:5076/swagger/index.html
+    Oracle
+
+    SQL: ALTER USER hr ACCOUNT UNLOCK
+         ALTER USER hr IDENTIFIED BY oracle
+    ```
+
+5. Rodando apenas poc.cqrs.api.mkt.mysql.ef.net8:
+    ```bash
+    cd C:\Work\poc.cqrs.api.net8 
+    docker-compose up --build
+    http://localhost:5077/swagger/index.html
+    MySQL
     ``` 
 
 ## Youtube
