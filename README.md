@@ -160,6 +160,10 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
  </TR> 
 </table>
 
+## Indice Backend
+
+- [1. Criação de usuários poc.cqrs.api.core.sqlserver.ef.net8](#1.-Criação-de-usuários-poc.cqrs.api.core.sqlserver.ef.net8)
+
 ## 1. Criação de usuários poc.cqrs.api.core.sqlserver.ef.net8
 
 ### 1.1 - Comportamento Esperado - /api/v1/User
