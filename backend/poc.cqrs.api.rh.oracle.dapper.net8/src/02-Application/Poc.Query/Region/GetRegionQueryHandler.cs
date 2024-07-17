@@ -22,7 +22,7 @@ public class GetRegionQueryHandler : IRequestHandler<GetRegionQuery, Result<List
     {
         const string cacheKey = nameof(GetRegionQuery);
 
-        //OracleDynamicParametersFilters.AddPaginacaoAsync(ref query, request.Pagina, request.ItensPorPagina);
+        //OracleDynamicParametersFilters.AddPaginacaoAsync(null, null, null);
 
         return Result.Success(await _cacheService.GetOrCreateAsync(cacheKey, _repo.Get, TimeSpan.FromHours(2)));
     }

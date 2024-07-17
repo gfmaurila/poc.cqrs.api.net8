@@ -5,7 +5,7 @@ using System.Data;
 namespace poc.core.api.net8.Filter.QueryStore;
 
 
-internal static class OracleDynamicParametersFilters
+public static class OracleDynamicParametersFilters
 {
     /// <summary>
     /// Constrói dinamicamente uma cláusula SQL de filtro e adiciona parâmetros à consulta.
@@ -348,7 +348,7 @@ internal static class OracleDynamicParametersFilters
     /// </summary>
     /// <param name="obj">O objeto a ser verificado.</param>
     /// <returns>True se o objeto for de um tipo numérico, caso contrário, False.</returns>
-    internal static bool ObjectIsNumeric(object obj)
+    public static bool ObjectIsNumeric(object obj)
     {
         return obj is int or long or decimal or double or float;
     }

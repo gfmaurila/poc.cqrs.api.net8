@@ -1,6 +1,6 @@
 ﻿namespace poc.core.api.net8.Enumerado;
 
-internal enum QueryStoreFilterType
+public enum QueryStoreFilterType
 {
     And,
     Or
