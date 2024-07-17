@@ -1,3 +1,42 @@
+# Introdução ao Projeto de Simulação de Desenvolvimento de Sistemas
+
+Este projeto foi desenvolvido com o objetivo de simular um ambiente de desenvolvimento de sistemas que envolve a integração e manutenção de múltiplas APIs, cada uma com diferentes comportamentos, bancos de dados, mensagerias, arquiteturas e consumo de APIs. A simulação é destinada a profissionais que desejam treinar e se preparar para a manutenção de projetos de grande porte no mercado de trabalho.
+
+# Componentes do Projeto
+
+# 1. NuGet Package: poc.core.net8
+- O pacote poc.core.net8 foi criado para ser reutilizado por todas as APIs do projeto, fornecendo uma base comum e facilitando a integração entre os diferentes serviços.
+
+# 2. API: poc.cqrs.api.core.sqlserver.ef.net8
+- Esta API centraliza o cadastro de usuários de diversos setores, utilizando o Entity Framework e o SQL Server como banco de dados. Ela é essencial para gerenciar informações de usuários de maneira eficiente e segura.
+
+# 3. API: poc.cqrs.api.rh.oracle.dapper.net8
+- Responsável pelo cadastro de funcionários do sistema, esta API utiliza o Dapper e o Oracle como banco de dados. Ela é projetada para lidar com grandes volumes de dados de funcionários, garantindo rapidez e eficiência nas operações.
+
+# 4. API: poc.cqrs.api.mkt.mysql.ef.net8
+- Focada no envio de emails de propaganda, esta API utiliza o Entity Framework e o MySQL como banco de dados. Ela é crucial para as operações de marketing, permitindo o envio automatizado de campanhas publicitárias.
+
+# 5. API: poc.cqrs.api.mock.net8
+
+- Estas são APIs mínimas criadas para simular o consumo de APIs e a postagem de envio de emails usando mensagerias como Kafka e RabbitMQ. Elas são fundamentais para testar e garantir a robustez do sistema em ambientes de produção.
+
+# Objetivo do Projeto
+
+O principal objetivo deste projeto é proporcionar um ambiente de simulação que permita aos profissionais treinar e entender como seria a manutenção e desenvolvimento de um grande projeto no mercado de trabalho. Através da utilização de diferentes tecnologias e práticas de mercado, os usuários poderão adquirir experiência prática e desenvolver habilidades essenciais para a gestão e integração de sistemas complexos.
+
+Este projeto é uma excelente oportunidade para se familiarizar com diversas tecnologias, arquiteturas e práticas de integração de sistemas, preparando os profissionais para os desafios reais do mercado de desenvolvimento de software.
+
+
+## Índice
+
+- [Estrutura da API](#visão-geral)
+- [Arquitetura](#tecnologias-utilizadas)
+- [Descrição das APIs](#uso)
+- [Instalação](#instalação)
+- [poc.cqrs.api.gateway.net8](#requisitos)
+
+
+
 # Estrutura da API
 - ASP.NET Core 8.0: Framework para desenvolvimento da Microsoft.
 - AutoMapper: Biblioteca para realizar mapeamento entre objetos.
@@ -17,32 +56,6 @@
 - Repository Pattern
 - Resut Pattern
 - Domain Events
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/0a014186-c661-4e09-b913-ab107b954aaa)
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/691cd9ff-a2aa-43b6-8779-60e8576df346)
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/805a243a-0e42-4da3-84e3-9c8a47f2822c)
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/e16b3ba3-fdea-4cea-8dcd-5f7568ea2c87)
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/ff9079a2-9ebb-4492-a2eb-14ea53b4e8cd)
-
-
-# CQRS - Pattern
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/aab9aefa-6819-456b-94af-237686a6949e)
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/3e088ec5-5f08-4fdc-a11c-935cd3f394de)
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/9d1d947f-7a0b-4cad-828b-95dee1e8625e)
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/4ded984b-273c-45c6-93dd-9eb5acb2a349)
-
-
-
-# Raiz do projeto
-
-## Clone o projeto usando o seguinte comando: 
-- https://github.com/gfmaurila/poc.cqrs.api.net8
-    - cd poc.cqrs.api.net8 > cd src
-        - git clone https://github.com/gfmaurila/poc.cqrs.api.gateway.net8.git
-        - git clone https://github.com/gfmaurila/poc.cqrs.api.core.sqlserver.ef.net8.git
-        - git clone https://github.com/gfmaurila/poc.cqrs.api.rh.oracle.dapper.net8.git
-        - git clone https://github.com/gfmaurila/poc.cqrs.api.mkt.mysql.ef.net8.git
-        - git clone https://github.com/gfmaurila/poc.cqrs.api.mock.net8.git
-    
 
 # Descrição das APIs
 
