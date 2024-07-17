@@ -335,6 +335,8 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 
 - Este endpoint é utilizado para testar o envio de mensagens via WhatsApp e SMS utilizando o serviço Twilio. Ele serve para verificar se a integração com o Twilio está funcionando corretamente e se as mensagens estão sendo enviadas conforme esperado.
 
+- API: https://www.twilio.com
+
     ```
     curl -X 'POST' \
     'https://localhost:44375/api/v1/Notification/WhatsApp' \
@@ -370,6 +372,7 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 ### 3.3 - POST - E-mail
 
 - API também suporta o envio de emails através do SendGrid.
+- API: https://app.sendgrid.com/guide
 
     ```
     curl -X 'POST' \
