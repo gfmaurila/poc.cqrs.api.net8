@@ -143,7 +143,7 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 
 [[_TOC_]]
 
-#Histórico de Alterações
+# Histórico de Alterações
 
 
 <table style="word-break: break-all; white-space:pre-line; font-size:10pt;">
@@ -160,6 +160,32 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
   <TD> #0000 </TD> 
  </TR> 
 </table>
+
+## 1. Criação de usuários poc.cqrs.api.core.sqlserver.ef.net8
+
+### 1.1 - Comportamento Esperado - /api/v1/User
+    - Comportamento Esperado
+
+### 1.2 - Create - Post
+```
+curl --location --request POST 'https://localhost:44375/api/v1/User' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImdmbWF1cmlsYTEwQGdtYWlsLmNvbSIsImlkIjoiYzdhMTE1MGYtYmNmMC00M2EzLTkxNzctODcwNmViNGVkMDQzIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVVNFUiIsImV4cCI6MTcxMTcxNTIxOCwiaXNzIjoiSnd0QXBpQXV0aCIsImF1ZCI6Ikp3dEFwaUF1dGgifQ.XYOFdEcMxlCzXHat7FEa-6intyItzjFswe_z87eaAwU' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "firstName": "Guilherme",
+  "lastName": "Figueiras Maurila",
+  "gender": 1,
+  "notification": 1,
+  "dateOfBirth": "1986-03-18",
+  "email": "gfmaurila16@gmail.com",
+  "phone": "519985623365",
+  "password": "@G18u03i1986",
+  "confirmpassword": "@G18u03i1986",
+  "roleUserAuth": [
+    "USER"
+  ]
+}'
+```
 
 
 
