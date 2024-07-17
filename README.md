@@ -141,9 +141,7 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 4. Poc.MKT.API.drawio
 5. Projeto de Sistema de RH.pdf
 
-[[_TOC_]]
-
-# Histórico de Alterações
+## Histórico de Alterações
 
 
 <table style="word-break: break-all; white-space:pre-line; font-size:10pt;">
@@ -164,7 +162,7 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
 ## 1. Criação de usuários poc.cqrs.api.core.sqlserver.ef.net8
 
 ### 1.1 - Comportamento Esperado - /api/v1/User
-    - Comportamento Esperado
+- Comportamento Esperado
 
 ### 1.2 - Create - Post
 ```
@@ -179,8 +177,8 @@ curl --location --request POST 'https://localhost:44375/api/v1/User' \
   "dateOfBirth": "1986-03-18",
   "email": "gfmaurila16@gmail.com",
   "phone": "519985623365",
-  "password": "@G18u03i1986",
-  "confirmpassword": "@G18u03i1986",
+  "password": "@****",
+  "confirmpassword": "@*****",
   "roleUserAuth": [
     "USER"
   ]
