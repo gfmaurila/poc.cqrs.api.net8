@@ -72,7 +72,6 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - poc.cqrs.api.mock.net8: Simulação de envios de email e mensagens.
 - docker-compose up --build
 - http://localhost:5078/swagger/index.html
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/4a8dd47a-728d-4e22-8583-b66664f6615e)
 
 
 ## poc.cqrs.api.core.sqlserver.ef.net8
@@ -80,7 +79,6 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - docker-compose up --build
 - http://localhost:5075/swagger/index.html
 - SQL Server
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/f8d7de83-0bb6-4fdf-a462-5d92c01c32ed)
 
 
 ## poc.cqrs.api.rh.oracle.dapper.net8
@@ -89,13 +87,11 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - http://localhost:5076/swagger/index.html
 - ALTER USER hr ACCOUNT UNLOCK;
 - ALTER USER hr IDENTIFIED BY oracle;
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/f8d7de83-0bb6-4fdf-a462-5d92c01c32ed)
 
 ## poc.cqrs.api.mkt.mysql.ef.net8
 - API para gerenciamento de campanhas de email marketing.
 - docker-compose up --build
 - http://localhost:5077/swagger/index.html
-![image](https://github.com/gfmaurila/poc.cqrs.api.net8/assets/5544035/f8d7de83-0bb6-4fdf-a462-5d92c01c32ed)
 
 ## poc.cqrs.api.mock.net8
 - Simula a funcionalidade de serviços de email e mensagens, como SendGridEmail e Twilio.
@@ -105,6 +101,16 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - Biblioteca central que fornece classes e métodos utilizados por todos os projetos.
 - Install-Package poc.core.api.net8
 - https://www.nuget.org/packages/poc.core.api.net8
+
+
+## Instalação:
+
+Este guia fornecerá as instruções necessárias para a instalação e configuração do projeto de simulação de desenvolvimento de sistemas. Este projeto inclui múltiplas APIs, diferentes bancos de dados, mensagerias e componentes reutilizáveis, projetados para treinar profissionais na manutenção de grandes projetos de software. Siga as etapas abaixo para configurar o ambiente de desenvolvimento e começar a utilizar o projeto.
+
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/gfmaurila/poc.cqrs.api.net8.git
+    ``` 
 
 ## Youtube
 - ......
