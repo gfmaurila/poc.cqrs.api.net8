@@ -27,7 +27,7 @@ O principal objetivo deste projeto é proporcionar um ambiente de simulação qu
 Este projeto é uma excelente oportunidade para se familiarizar com diversas tecnologias, arquiteturas e práticas de integração de sistemas, preparando os profissionais para os desafios reais do mercado de desenvolvimento de software.
 
 
-## Projeto
+## Projeto - Backend
 
 - [Estrutura da API](#Estrutura-da-API)
 - [Arquitetura](#Arquitetura)
@@ -35,6 +35,10 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - [Instalação](#Instalação)
 - [Observação](#Observação)
 - [Documentação](#Documentação)
+
+## Projeto - Frontend
+
+- [Instale as dependências](#Instale-as-dependências)
 
 
 ## Estrutura da API
@@ -56,6 +60,9 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - Repository Pattern
 - Resut Pattern
 - Domain Events
+
+## Frontend
+- React
 
 ## Descrição das APIs
 
@@ -95,7 +102,9 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
     ```bash
     cd C:\Work\poc.cqrs.api.net8 
     docker-compose up --build
-    http://localhost:5078/swagger/index.html
+    
+    Acesso Backend: http://localhost:5078/swagger/index.html
+    Acesso Front: http://localhost/ - Falta iniciar o projeto
 
     ``` 
 
@@ -128,6 +137,18 @@ Este guia fornecerá as instruções necessárias para a instalação e configur
     http://localhost:5077/swagger/index.html
     MySQL
     ``` 
+
+## Instale as dependências
+
+1. Clone:
+    ```bash
+    cd C:\Work\poc.cqrs.api.net8\front-end\poc.admin.react
+    npm install
+    yarn install
+    npm start
+    yarn start
+    Acesso: http://localhost/ - Falta iniciar o projeto
+    ```
 
 ## Observação:
 
