@@ -394,10 +394,6 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
     }'
     ```
 
-
-
-
-
 ## API RH
 
 ### 1 - Comportamento Esperado - /api/v1/Region
