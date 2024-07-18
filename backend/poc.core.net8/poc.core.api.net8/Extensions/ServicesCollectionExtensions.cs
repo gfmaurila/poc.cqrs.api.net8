@@ -1,8 +1,10 @@
 using Microsoft.Extensions.DependencyInjection;
 using poc.core.api.net8.AppSettings;
+using System.Diagnostics.CodeAnalysis;
 
 namespace poc.core.api.net8.Extensions;
 
+[ExcludeFromCodeCoverage]
 public static class ServicesCollectionExtensions
 {
     public static void ConfigureAppSettings(this IServiceCollection services)

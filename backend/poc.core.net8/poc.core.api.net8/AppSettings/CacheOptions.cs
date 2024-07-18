@@ -1,5 +1,8 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace poc.core.api.net8.AppSettings;
 
+[ExcludeFromCodeCoverage]
 public sealed class CacheOptions : BaseOptions
 {
     public const string ConfigSectionPath = nameof(CacheOptions);

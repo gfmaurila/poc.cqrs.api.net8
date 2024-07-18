@@ -1,7 +1,9 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
 namespace poc.core.api.net8.Extensions;
 
+[ExcludeFromCodeCoverage]
 public static class AssemblyExtensions
 {
     public static IEnumerable<Type> GetAllTypesOfInterface<TInterface>(this Assembly assembly)

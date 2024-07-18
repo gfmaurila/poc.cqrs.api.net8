@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using poc.core.api.net8.Interface;
 using poc.core.api.net8.Model;
 using poc.core.api.net8.Response;
+using System.Diagnostics.CodeAnalysis;
 using System.Net;
 
 namespace poc.core.api.net8.Controllers;
@@ -10,6 +11,7 @@ namespace poc.core.api.net8.Controllers;
 /// <summary>
 /// Controlador base que fornece funcionalidades comuns a outros controladores.
 /// </summary>
+[ExcludeFromCodeCoverage]
 [ApiController]
 public abstract class MainController : ControllerBase
 {
