@@ -18,6 +18,7 @@ Este projeto é uma excelente oportunidade para se familiarizar com diversas tec
 - [Observação](#Observação)
 - [Documentação](#Documentação)
 - [Histórico de Alterações](#Histórico-de-Alterações)
+- [Teste Unitário](#Teste-Unitário)
 
 ## Estrutura da API
 - ASP.NET Core 8.0: Framework para desenvolvimento da Microsoft.
@@ -527,6 +528,23 @@ CD C:\Work\poc.cqrs.api.net8\doc\Doc
     -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImdmbWF1cmlsYUBnbWFpbC5jb20iLCJpZCI6IjhhOGNhY2JlLTI2NDUtNDA5MC1hYzgwLTQwNTAyMTRkNGRlOSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6WyJVU0VSIiwiQ1JFQVRFX1VTRVIiLCJVUERBVEVfVVNFUiIsIkRFTEVURV9VU0VSIiwiR0VUX1VTRVIiLCJHRVRfQllfSURfVVNFUiIsIk5PVElGSUNBVElPTiIsIkNSRUFURV9OT1RJRklDQVRJT04iLCJERUxFVEVfTk9USUZJQ0FUSU9OIiwiR0VUX05PVElGSUNBVElPTiIsIlJFR0lPTiIsIkNPVU5UUkkiLCJERVBBUlRNRU5UIiwiRU1QTE9ZRUUiLCJKT0IiLCJKT0JfSElTVE9SWSIsIkxPQ0FUSU9OIiwiTUtUX1BPU1QiXSwiZXhwIjoxNzIxMjg3MTEzLCJpc3MiOiJKd3RBcGlBdXRoIiwiYXVkIjoiSnd0QXBpQXV0aCJ9.xSDTsJaNW69Em-GOUZ-e-PE8xinNAWnE3NkIAYjs7mk'
     ```
 
+## Teste Unitário
+
+
+<table style="word-break: break-all; white-space:pre-line; font-size:10pt;">
+ <TR style="background:#1F4E79;color:White;">
+  <TD>Projeto</TD>
+  <TD>Desenvolvedor</TD>
+  <TD>Descrição da alteração</TD>
+  <TD>Line Coverage %</TD>
+ </TR>
+ <TR style="background:white; color:black">
+  <TD>Library - poc.core.api.net8</TD>
+  <TD> Guilherme Figueiras Maurila </TD>
+  <TD> Core dos projetos </TD>
+  <TD> 88.4% </TD> 
+ </TR> 
+</table>
 
 
 ## Youtube
