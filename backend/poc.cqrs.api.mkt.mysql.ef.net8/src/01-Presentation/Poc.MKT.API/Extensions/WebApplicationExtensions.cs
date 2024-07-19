@@ -2,8 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using poc.core.api.net8.API.Models;
 using Poc.DistributedCache.Configuration;
-using Poc.MKT.API.Models;
 using Poc.MySQL.Context;
 using System.Reflection;
 using System.Text;

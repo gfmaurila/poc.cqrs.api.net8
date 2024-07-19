@@ -1,13 +1,13 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using poc.core.api.net8.API.Extensions;
+using poc.core.api.net8.API.Models;
 using poc.core.api.net8.User;
 using Poc.Contract.Command.Region.Request;
 using Poc.Contract.Command.Region.Response;
 using Poc.Contract.Query.Region.Request;
 using Poc.Contract.Query.Region.ViewModels;
-using Poc.RH.API.Extensions;
-using Poc.RH.API.Models;
 using System.ComponentModel;
 using System.Net.Mime;
 

@@ -2,11 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using poc.core.api.net8.API.Models;
 using Poc.DistributedCache.Configuration;
 using Poc.SQLServer.Context;
 using System.Reflection;
 using System.Text;
-using poc.core.api.net8.API.Models;
 
 namespace Poc.Core.API.Extensions;
 

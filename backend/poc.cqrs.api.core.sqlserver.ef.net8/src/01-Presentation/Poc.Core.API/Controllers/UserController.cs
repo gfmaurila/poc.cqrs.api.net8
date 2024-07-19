@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using poc.core.api.net8.User;
 using poc.core.api.net8.API.Extensions;
 using poc.core.api.net8.API.Models;
+using poc.core.api.net8.User;
 using Poc.Contract.Command.User.Request;
 using Poc.Contract.Command.User.Response;
 using Poc.Contract.Query.User.EF.QueriesModel;
