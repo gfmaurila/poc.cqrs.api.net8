@@ -38,7 +38,7 @@ public class UserEntity : BaseEntity, IAggregateRoot
         AddDomainEvent(new UserCreatedEvent(Id, firstName, lastName, gender, notification, email.Address, phone.Phone, password, role, dateOfBirth));
     }
 
-    private UserEntity() { } // ORM
+    public UserEntity() { } // ORM
 
     /// <summary>
     /// Primeiro Nome.

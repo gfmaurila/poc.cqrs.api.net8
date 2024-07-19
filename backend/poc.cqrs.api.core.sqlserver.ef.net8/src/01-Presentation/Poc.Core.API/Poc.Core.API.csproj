@@ -53,11 +53,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Content Update="appsettings.Test.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Update="Properties\launchSettings.json">
 	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 	    <CopyToPublishDirectory>Never</CopyToPublishDirectory>
 	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Poc.Register.IntegrationTests" />
 	</ItemGroup>
 
 </Project>

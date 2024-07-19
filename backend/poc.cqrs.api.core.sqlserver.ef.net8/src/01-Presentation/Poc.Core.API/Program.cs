@@ -74,3 +74,5 @@ app.Logger.LogInformation("----- Iniciando a aplicação - Core...");
 await app.MigrateAsync(); // Aqui faz migrations
 
 app.Run();
+
+public partial class Program { }
