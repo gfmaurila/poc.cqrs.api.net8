@@ -1,10 +1,10 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using poc.core.api.net8.API.Extensions;
+using poc.core.api.net8.API.Models;
 using poc.core.api.net8.User;
 using Poc.Contract.Command.Notification.Request;
-using Poc.Core.API.Extensions;
-using Poc.Core.API.Models;
 using System.ComponentModel;
 using System.Net.Mime;
 

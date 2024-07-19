@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using poc.core.api.net8.User;
+using poc.core.api.net8.API.Extensions;
+using poc.core.api.net8.API.Models;
 using Poc.Contract.Command.User.Request;
 using Poc.Contract.Command.User.Response;
 using Poc.Contract.Query.User.EF.QueriesModel;
 using Poc.Contract.Query.User.Request;
-using Poc.Core.API.Extensions;
-using Poc.Core.API.Models;
 using System.ComponentModel;
 using System.Net.Mime;
 

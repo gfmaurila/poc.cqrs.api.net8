@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using poc.core.api.net8.API.Extensions;
+using poc.core.api.net8.API.Models;
 using Poc.Contract.Command.Auth.Request;
 using Poc.Contract.Command.Auth.Response;
-using Poc.Core.API.Extensions;
-using Poc.Core.API.Models;
 using System.ComponentModel;
 using System.Net.Mime;
 

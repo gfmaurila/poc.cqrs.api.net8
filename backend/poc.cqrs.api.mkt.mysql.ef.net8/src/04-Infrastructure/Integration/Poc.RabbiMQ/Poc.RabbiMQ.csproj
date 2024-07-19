@@ -14,7 +14,7 @@
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 
-		<PackageReference Include="poc.core.api.net8" Version="1.0.0" />
+		<PackageReference Include="poc.core.api.net8" Version="1.0.6" />
 	</ItemGroup>
 
 	<ItemGroup>

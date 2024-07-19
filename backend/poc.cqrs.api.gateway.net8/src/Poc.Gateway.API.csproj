@@ -24,7 +24,7 @@
     <PackageReference Include="StackExchange.Redis" Version="2.7.4" />
     <PackageReference Include="StackExchange.Redis.Extensions" Version="1.0.1" />
     <PackageReference Include="Swashbuckle.aspnetcore" Version="6.5.0" />
-	  <PackageReference Include="poc.core.api.net8" Version="1.0.0" />
+	  <PackageReference Include="poc.core.api.net8" Version="1.0.6" />
     <PackageReference Include="yarp.ReverseProxy" Version="2.1.0" />
   </ItemGroup>
 
