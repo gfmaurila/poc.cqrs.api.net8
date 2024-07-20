@@ -1,6 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<ItemGroup>
+
+		<PackageReference Include="MediatR" Version="11.1.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+		<PackageReference Include="MongoDB.Bson" Version="2.24.0" />
+		<PackageReference Include="MongoDB.Driver" Version="2.24.0" />
+		
 		<PackageReference Include="Ardalis.Result" Version="7.0.0" />
 		<PackageReference Include="Dapper" Version="2.1.35" />
 		<PackageReference Include="JsonNet.ContractResolvers" Version="2.0.0" />
@@ -29,8 +38,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<PackageId>poc.core.api.net8</PackageId>
-	<Version>1.0.6</Version>
+	<PackageId>poc.vertical.slices-full-stack-react.net8</PackageId>
+	<Version>1.0.0</Version>
 	<Authors>Guilherme F Maurila</Authors>
 	<Company>gfmaurila</Company>
 	<Description>Ajuste no filtro de listagens</Description>
