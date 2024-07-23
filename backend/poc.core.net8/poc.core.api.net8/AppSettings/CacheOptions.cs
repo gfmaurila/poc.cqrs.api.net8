@@ -9,4 +9,6 @@ public sealed class CacheOptions : BaseOptions
 
     public int AbsoluteExpirationInHours { get; private init; }
     public int SlidingExpirationInSeconds { get; private init; }
+    public int DbIndex { get; private init; }
+
 }
