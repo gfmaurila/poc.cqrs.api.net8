@@ -1,16 +1,22 @@
-﻿using poc.core.api.net8.DistributedCache.Configuration;
+﻿using Microsoft.Extensions.Options;
+using poc.core.api.net8.AppSettings;
+using poc.core.api.net8.DistributedCache.Configuration;
 using poc.core.api.net8.Interface;
+using StackExchange.Redis;
 using System.Text.Json;
 
 namespace poc.core.api.net8.DistributedCache.Redis;
 
 public class RedisCacheService<T> : IRedisCacheService<T>
 {
-    private readonly StackExchange.Redis.IDatabase _database;
+    private readonly IDatabase _database;
+    private readonly CacheOptions _cacheOptions;
 
-    public RedisCacheService(RedisConnection redisConnection)
+    public RedisCacheService(RedisConnection redisConnection, IOptions<CacheOptions> cacheOptions)
     {
-        _database = redisConnection.GetDatabase();
+        _cacheOptions = cacheOptions.Value;
+        // Aqui você passa o índice do banco de dados definido nas configurações para o método GetDatabase
+        _database = redisConnection.GetDatabase(_cacheOptions.DbIndex);
     }
 
     public async Task<bool> SetAsync(string key, T value, TimeSpan? expiry = null)

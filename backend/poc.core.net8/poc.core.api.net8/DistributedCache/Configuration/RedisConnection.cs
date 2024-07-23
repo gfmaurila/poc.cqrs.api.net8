@@ -20,8 +20,9 @@ public class RedisConnection
         }
     }
 
-    public IDatabase GetDatabase()
+    // Modifique este método para aceitar um índice de banco de dados opcional
+    public IDatabase GetDatabase(int dbIndex = -1) // -1 indica que será usado o banco de dados padrão
     {
-        return _redisConnection.GetDatabase();
+        return _redisConnection.GetDatabase(dbIndex);
     }
 }
