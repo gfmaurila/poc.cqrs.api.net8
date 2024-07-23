@@ -8,7 +8,7 @@ dotnet pack --configuration Release
 
 Gere a MINHA_API_KEY 
 https://www.nuget.org/account/apikeys
-dotnet nuget push "C:\Work\gfmaurila\poc.cqrs.api.net8\backend\poc.core.net8\poc.core.api.net8\bin\Release\poc.vertical.slices-full-stack-react.net8.1.0.3.nupkg" -k MINHA_API_KEY  -s https://api.nuget.org/v3/index.json
+dotnet nuget push "C:\Work\gfmaurila\poc.cqrs.api.net8\backend\poc.core.net8\poc.core.api.net8\bin\Release\poc.vertical.slices-full-stack-react.net8.1.0.4.nupkg" -k MINHA_API_KEY  -s https://api.nuget.org/v3/index.json
 
 
 

@@ -39,7 +39,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	<PackageId>poc.vertical.slices-full-stack-react.net8</PackageId>
-	<Version>1.0.3</Version>
+	<Version>1.0.4</Version>
 	<Authors>Guilherme F Maurila</Authors>
 	<Company>gfmaurila</Company>
 	<Description>Ajuste no filtro de listagens</Description>
